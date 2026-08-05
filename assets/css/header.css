@@ -1,0 +1,52 @@
+.header {
+  height: 78px;
+  border-bottom: 1px solid #202a30;
+  background: #080e12;
+  display: flex;
+  align-items: center;
+  padding: 0 max(24px, calc((100% - 1180px) / 2));
+  gap: 48px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 36px;
+  flex: 1;
+}
+.nav a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  position: relative;
+}
+.nav a.active {
+  color: var(--red);
+}
+.nav a.active:after {
+  content: "";
+  height: 2px;
+  background: var(--red);
+  position: absolute;
+  left: -16px;
+  right: -16px;
+  bottom: 0;
+}
+.search-btn {
+  background: #121a20;
+  border: 1px solid #2b353c;
+  color: #fff;
+  border-radius: 7px;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.nav a:hover{
+  color: var(--red);
+}

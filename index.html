@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Central de estudos da turma de Eletrotécnica 2026.">
+  <title>Eletrotécnica 2026</title>
+  <link rel="shortcut icon" href="assets/img/logotransparente.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/calculadora.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <a class="brand" href="#">
+      <span class="brand-mark">ϟ</span>
+      <span><strong>ELETROTÉCNICA</strong><b>2026</b></span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="active" href="#inicio">INÍCIO</a>
+      <a href="materias.html">MATÉRIAS</a>
+      <a href="ferramentas.html">FERRAMENTAS</a>
+      <a href="normas.html">NORMAS</a>
+      <a href="senai.html">SENAI</a>
+      <a href="sobre.html">SOBRE</a>
+    </nav>
+
+    <button class="search-btn" type="button" aria-label="Buscar">⌕ <span>BUSCAR</span></button>
+  </header>
+
+  <main id="inicio">
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="bolt">ϟ</div>
+        <h1>CONHECIMENTO<br>QUE <span>ENERGIZA.</span></h1>
+        <p>Central de estudos da turma de Eletrotécnica 2026.<br>
+          Aqui você encontra matérias, fórmulas, calculadoras,<br>
+          normas técnicas e muito mais.</p>
+      </div>
+    </section>
+
+    <section class="section quick-section">
+      <div class="section-heading">
+        <h2>ACESSO RÁPIDO</h2><a href="#">Ver todos →</a>
+      </div>
+      <div class="quick-grid">
+        <a class="quick-card red" href="materias.html"><i>▮</i>
+          <div>
+            <h3>MATÉRIAS</h3>
+            <p>Acesse os conteúdos<br>das disciplinas<br>do curso.</p>
+          </div><b>→</b>
+        </a>
+        <a class="quick-card blue" href="ferramentas.html"><i>ƒ+</i>
+          <div>
+            <h3>FERRAMENTAS</h3>
+            <p>Fórmulas e<br>calculadoras<br>interativas.</p>
+          </div><b>→</b>
+        </a>
+        <a class="quick-card green" href="normas.html"><i>▤</i>
+          <div>
+            <h3>NORMAS</h3>
+            <p>Normas técnicas<br>essenciais da<br>área elétrica.</p>
+          </div><b>→</b>
+        </a>
+        <a class="quick-card gold" href="senai.html"><i>◇</i>
+          <div>
+            <h3>SENAI</h3>
+            <p>Acesso rápido aos<br>materiais e links<br>do SENAI.</p>
+          </div><b>→</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>FERRAMENTAS RÁPIDAS</h2>
+      </div>
+      <div class="tools">
+        <button class="tool" data-tool="ohm" onclick="window.location.href='ferramentas.html'"><span>─Ω─</span><small>Lei de Ohm</small></button>
+        <button class="tool" data-tool="power" onclick="window.location.href='ferramentas.html'"><span>ϟ</span><small>Potência<br>Elétrica</small></button>
+        <button class="tool" onclick="window.location.href='ferramentas.html'"><span>≋≋</span><small>Associação<br>de Resistores</small></button>
+        <button class="tool" onclick="window.location.href='ferramentas.html'"><span>∿</span><small>Trifásico</small></button>
+        <button class="tool" onclick="window.location.href='ferramentas.html'"><span>↘</span><small>Queda de<br>Tensão</small></button>
+        <button class="tool" onclick="window.location.href='ferramentas.html'"><span>kWh</span><small>Energia<br>Elétrica</small></button>
+        <button class="tool" onclick="window.location.href='ferramentas.html'"><span>⌁</span><small>Conversor<br>de Unidades</small></button>
+      </div>
+    </section>
+
+    <section class="section content-grid">
+      <div id="materias">
+        <div class="section-heading">
+          <h2>MATÉRIAS EM DESTAQUE</h2><a href="#">Ver todas →</a>
+        </div>
+        <div class="subject-list">
+          <a class="subject"><span class="subject-icon red">▥</span>
+            <div>
+              <h3>Comandos Elétricos</h3>
+              <p>Circuitos de comando e força, dispositivos de proteção e acionamentos.</p>
+            </div><b>›</b>
+          </a>
+          <a class="subject"><span class="subject-icon blue">♜</span>
+            <div>
+              <h3>SEP – Sistemas Elétricos de Potência</h3>
+              <p>Geração, transmissão, distribuição e instalações elétricas.</p>
+            </div><b>›</b>
+          </a>
+          <a class="subject" href="ferramentas.html"><span class="subject-icon green">▣</span>
+            <div>
+              <h3>Cálculos Básicos</h3>
+              <p>Matemática aplicada à elétrica, fórmulas e resoluções.</p>
+            </div><b>›</b>
+          </a>
+        </div>
+      </div>
+
+      <div id="calculos" class="calculator-card">
+        <div class="section-heading">
+          <h2>⚡ CALCULADORA DESTAQUE</h2>
+        </div>
+        <div class="calculator">
+          <h3>Lei de Ohm</h3>
+          <div class="formula">V = R × I</div>
+          <div class="fields">
+            <label>Tensão (V)<div><input id="voltage" type="number" value="220"><span>V</span></div></label>
+            <label>Resistência (Ω)<div><input id="resistance" type="number" value="110"><span>Ω</span></div></label>
+            <label>Corrente (I)<div><input id="current" type="number" value="2"><span>A</span></div></label>
+          </div>
+          <div class="calc-bottom"><button id="calculate">CALCULAR</button>
+            <div><small>Resultado</small><strong id="result">2 A</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="consulta">
+      <div class="section-heading">
+        <h2>CONSULTA RÁPIDA</h2>
+      </div>
+      <div class="consult-grid">
+        <a class="consult gold" href="#"><span>◉</span>
+          <div>
+            <h3>Unidades Elétricas</h3>
+            <p>A, V, W, Ω, Hz, etc.</p>
+          </div>
+        </a>
+        <a class="consult purple" href="#"><span>⌁</span>
+          <div>
+            <h3>Símbolos Elétricos</h3>
+            <p>Principais símbolos</p>
+          </div>
+        </a>
+        <a class="consult cyan" href="#"><span>ⓘ</span>
+          <div>
+            <h3>Códigos de Cores</h3>
+            <p>Condutores e fases</p>
+          </div>
+        </a>
+        <a class="consult green" href="#"><span>▣</span>
+          <div>
+            <h3>Grandezas Elétricas</h3>
+            <p>Tensão, corrente, potência, etc.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="sobre">
+    <div class="footer-line"></div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-mark">ϟ</span><span><strong>ELETROTÉCNICA</strong><b>2026</b></span></div>
+        <p>Turma de Eletrotécnica 2026 – SENAI</p>
+      </div>
+      <div>
+        <h3>NAVEGAÇÃO</h3><a href="#inicio">Início</a><a href="materias.html">Matérias</a><a
+          href="ferramentas.html">Cálculos</a><a href="normas.html">Normas</a><a href="senai.html">SENAI</a><a
+          href="sobre.html">Sobre</a>
+      </div>
+      <div id="senai">
+        <h3>SOBRE O PROJETO</h3>
+        <p>Este site é um projeto da turma de Eletrotécnica 2026 com o objetivo de centralizar conhecimentos e
+          ferramentas úteis para os estudos.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><a href="https://victoroliveiratec.github.io/Portifolio/" target="_blank"><span>© 2026
+          Eletrotécnica 2026. Todos os direitos reservados.</span><span>Desenvolvido Por Victor Hugo</a></span></div>
+  </footer>
+</body>
+
+</html>

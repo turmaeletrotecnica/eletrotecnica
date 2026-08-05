@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Ferramentas elétricas da turma de Eletrotécnica 2026. Calculadoras, conversores e utilitários para estudos."
+    />
+
+    <title>Ferramentas | Eletrotécnica 2026</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/img/logotransparente.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- JS -->
+    <script src="js/ferramentas.js" defer></script>
+  </head>
+
+  <body>
+    <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+    <header class="header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ϟ</span>
+
+        <span>
+          <strong>ELETROTÉCNICA</strong>
+          <b>2026</b>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html">INÍCIO</a>
+        <a href="materias.html">MATÉRIAS</a>
+        <a class="active" href="ferramentas.html">FERRAMENTAS</a>
+        <a href="normas.html">NORMAS</a>
+        <a href="senai.html">SENAI</a>
+        <a href="sobre.html">SOBRE</a>
+      </nav>
+
+      <button class="search-btn" type="button" aria-label="Buscar">
+        ⌕ <span>BUSCAR</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+      <section class="tools-hero">
+        <div class="tools-hero-bg"></div>
+
+        <div class="tools-hero-content">
+          <div class="tools-bolt">ϟ</div>
+
+          <h1>
+            FERRAMENTAS<br />
+            <span>ELÉTRICAS</span>
+          </h1>
+
+          <p>
+            Calculadoras, conversores e utilitários para facilitar seus estudos
+            e cálculos do dia a dia.
+          </p>
+
+          <a class="tools-primary-btn" href="#ferramentas-principais">
+            ESCOLHER FERRAMENTA
+            <span>›</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         FERRAMENTAS PRINCIPAIS
+         ===================================================== -->
+
+      <section class="section tools-section" id="ferramentas-principais">
+        <div class="section-heading">
+          <h2>FERRAMENTAS PRINCIPAIS</h2>
+        </div>
+
+        <div class="tools-main-grid">
+          <button class="main-tool-card" data-tool="ohm">
+            <span class="main-tool-icon">⌁</span>
+
+            <strong>LEI DE OHM</strong>
+
+            <p>Calcule tensão, corrente ou resistência.</p>
+
+            <span class="main-tool-arrow">→</span>
+          </button>
+
+          <button class="main-tool-card" data-tool="power">
+            <span class="main-tool-icon">ϟ</span>
+
+            <strong>POTÊNCIA<br />ELÉTRICA</strong>
+
+            <p>Calcule potência e demais grandezas elétricas.</p>
+
+            <span class="main-tool-arrow">→</span>
+          </button>
+
+          <button class="main-tool-card" data-tool="resistors">
+            <span class="main-tool-icon">─Ω─</span>
+
+            <strong>ASSOCIAÇÃO<br />DE RESISTORES</strong>
+
+            <p>Série ou paralelo. Calcule equivalentes facilmente.</p>
+
+            <span class="main-tool-arrow">→</span>
+          </button>
+
+          <button class="main-tool-card" data-tool="three-phase">
+            <span class="main-tool-icon">3~</span>
+
+            <strong>SISTEMA<br />TRIFÁSICO</strong>
+
+            <p>Calcule grandezas em sistemas trifásicos.</p>
+
+            <span class="main-tool-arrow">→</span>
+          </button>
+
+          <button class="main-tool-card" data-tool="voltage-drop">
+            <span class="main-tool-icon">↓</span>
+
+            <strong>QUEDA DE<br />TENSÃO</strong>
+
+            <p>Calcule a queda e verifique se está aceitável.</p>
+
+            <span class="main-tool-arrow">→</span>
+          </button>
+
+          <button class="main-tool-card" data-tool="energy">
+            <span class="main-tool-icon">ϟ</span>
+
+            <strong>CONSUMO DE<br />ENERGIA</strong>
+
+            <p>Estime consumo e custo da sua instalação.</p>
+
+            <span class="main-tool-arrow">→</span>
+          </button>
+
+          <button class="main-tool-card" data-tool="units">
+            <span class="main-tool-icon">↻</span>
+
+            <strong>CONVERSOR<br />DE UNIDADES</strong>
+
+            <p>Converta unidades de forma rápida e prática.</p>
+
+            <span class="main-tool-arrow">→</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         CALCULADORA + OUTRAS FERRAMENTAS
+         ===================================================== -->
+
+      <section class="section tools-feature-grid">
+        <!-- LEI DE OHM -->
+
+        <div class="tools-panel ohm-panel" id="calculadora-ohm">
+          <div class="tools-panel-title">
+            <h2>CALCULADORA EM DESTAQUE</h2>
+          </div>
+
+          <div class="ohm-calculator">
+            <div class="ohm-content">
+              <span class="tool-label"> LEI DE OHM </span>
+
+              <p class="tool-description">
+                Calcule tensão, corrente ou resistência.
+              </p>
+
+              <label>
+                O que deseja calcular?
+
+                <select id="ohm-mode">
+                  <option value="current">Corrente (I)</option>
+
+                  <option value="voltage">Tensão (V)</option>
+
+                  <option value="resistance">Resistência (R)</option>
+                </select>
+              </label>
+
+              <div class="ohm-fields">
+                <label>
+                  Tensão (V)
+
+                  <div class="input-unit">
+                    <input
+                      id="ohm-voltage"
+                      type="number"
+                      value="220"
+                      min="0"
+                      step="any"
+                    />
+
+                    <span>V</span>
+                  </div>
+                </label>
+
+                <label>
+                  Resistência (R)
+
+                  <div class="input-unit">
+                    <input
+                      id="ohm-resistance"
+                      type="number"
+                      value="110"
+                      min="0"
+                      step="any"
+                    />
+
+                    <span>Ω</span>
+                  </div>
+                </label>
+
+                <label>
+                  Corrente (I)
+
+                  <div class="input-unit">
+                    <input
+                      id="ohm-current"
+                      type="number"
+                      value="2"
+                      min="0"
+                      step="any"
+                    />
+
+                    <span>A</span>
+                  </div>
+                </label>
+              </div>
+
+              <button
+                class="tools-calculate-btn"
+                id="calculate-ohm"
+                type="button"
+              >
+                CALCULAR
+                <span>›</span>
+              </button>
+            </div>
+
+            <div class="ohm-formula">
+              <span>FÓRMULA</span>
+
+              <strong id="ohm-formula"> I = V / R </strong>
+
+              <div>
+                <p><b>V</b> = Tensão (Volts)</p>
+                <p><b>R</b> = Resistência (Ohms)</p>
+                <p><b>I</b> = Corrente (Ampères)</p>
+              </div>
+            </div>
+
+            <div class="ohm-result">
+              <small>RESULTADO</small>
+
+              <strong id="ohm-result"> 2 A </strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- OUTRAS FERRAMENTAS -->
+
+        <div class="tools-panel other-tools">
+          <div class="tools-panel-title">
+            <h2>OUTRAS FERRAMENTAS</h2>
+          </div>
+
+          <div class="other-tools-list">
+            <button class="other-tool" data-tool="units">
+              <span>↻</span>
+
+              <strong> Conversor de Unidades </strong>
+
+              <b>›</b>
+            </button>
+
+            <button class="other-tool" data-tool="symbols">
+              <span>⌘</span>
+
+              <strong> Símbolos Elétricos </strong>
+
+              <b>›</b>
+            </button>
+
+            <button class="other-tool" data-tool="colors">
+              <span>▦</span>
+
+              <strong> Códigos de Cores </strong>
+
+              <b>›</b>
+            </button>
+
+            <button class="other-tool" data-tool="formulas">
+              <span>◎</span>
+
+              <strong> Fórmulas Rápidas </strong>
+
+              <b>›</b>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         CONVERSORES
+         ===================================================== -->
+
+      <section class="section converters-section">
+        <div class="section-heading">
+          <h2>CONVERSORES RÁPIDOS</h2>
+        </div>
+
+        <div class="converter-grid">
+          <!-- TENSÃO -->
+
+          <article class="converter-card">
+            <h3>
+              <span>ϟ</span>
+              TENSÃO
+            </h3>
+
+            <div class="converter-selects">
+              <select data-from="voltage">
+                <option value="V">V</option>
+                <option value="kV">kV</option>
+                <option value="mV">mV</option>
+              </select>
+
+              <span>→</span>
+
+              <select data-to="voltage">
+                <option value="kV">kV</option>
+                <option value="V">V</option>
+                <option value="mV">mV</option>
+              </select>
+            </div>
+
+            <label>Valor</label>
+
+            <input
+              class="converter-input"
+              type="number"
+              value="220"
+              data-type="voltage"
+            />
+
+            <p>
+              Resultado:
+              <strong data-result="voltage"> 0,22 kV </strong>
+            </p>
+          </article>
+
+          <!-- CORRENTE -->
+
+          <article class="converter-card">
+            <h3>
+              <span>ϟ</span>
+              CORRENTE
+            </h3>
+
+            <div class="converter-selects">
+              <select data-from="current">
+                <option value="A">A</option>
+                <option value="mA">mA</option>
+                <option value="kA">kA</option>
+              </select>
+
+              <span>→</span>
+
+              <select data-to="current">
+                <option value="mA">mA</option>
+                <option value="A">A</option>
+                <option value="kA">kA</option>
+              </select>
+            </div>
+
+            <label>Valor</label>
+
+            <input
+              class="converter-input"
+              type="number"
+              value="10"
+              data-type="current"
+            />
+
+            <p>
+              Resultado:
+              <strong data-result="current"> 10.000 mA </strong>
+            </p>
+          </article>
+
+          <!-- POTÊNCIA -->
+
+          <article class="converter-card">
+            <h3>
+              <span>ϟ</span>
+              POTÊNCIA
+            </h3>
+
+            <div class="converter-selects">
+              <select data-from="power">
+                <option value="W">W</option>
+                <option value="kW">kW</option>
+                <option value="MW">MW</option>
+              </select>
+
+              <span>→</span>
+
+              <select data-to="power">
+                <option value="kW">kW</option>
+                <option value="W">W</option>
+                <option value="MW">MW</option>
+              </select>
+            </div>
+
+            <label>Valor</label>
+
+            <input
+              class="converter-input"
+              type="number"
+              value="1500"
+              data-type="power"
+            />
+
+            <p>
+              Resultado:
+              <strong data-result="power"> 1,5 kW </strong>
+            </p>
+          </article>
+
+          <!-- ENERGIA -->
+
+          <article class="converter-card">
+            <h3>
+              <span>ϟ</span>
+              ENERGIA
+            </h3>
+
+            <div class="converter-selects">
+              <select data-from="energy">
+                <option value="Wh">Wh</option>
+                <option value="kWh">kWh</option>
+                <option value="MWh">MWh</option>
+              </select>
+
+              <span>→</span>
+
+              <select data-to="energy">
+                <option value="kWh">kWh</option>
+                <option value="Wh">Wh</option>
+                <option value="MWh">MWh</option>
+              </select>
+            </div>
+
+            <label>Valor</label>
+
+            <input
+              class="converter-input"
+              type="number"
+              value="5000"
+              data-type="energy"
+            />
+
+            <p>
+              Resultado:
+              <strong data-result="energy"> 5 kWh </strong>
+            </p>
+          </article>
+
+          <!-- COMPRIMENTO -->
+
+          <article class="converter-card">
+            <h3>
+              <span>⌁</span>
+              COMPRIMENTO
+            </h3>
+
+            <div class="converter-selects">
+              <select data-from="length">
+                <option value="m">m</option>
+                <option value="cm">cm</option>
+                <option value="mm">mm</option>
+                <option value="km">km</option>
+              </select>
+
+              <span>→</span>
+
+              <select data-to="length">
+                <option value="mm">mm</option>
+                <option value="m">m</option>
+                <option value="cm">cm</option>
+                <option value="km">km</option>
+              </select>
+            </div>
+
+            <label>Valor</label>
+
+            <input
+              class="converter-input"
+              type="number"
+              value="2"
+              data-type="length"
+            />
+
+            <p>
+              Resultado:
+              <strong data-result="length"> 2000 mm </strong>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         STATUS DA TURMA
+         ===================================================== -->
+
+      <section class="tools-stats">
+        <div class="tools-stats-inner">
+          <div class="tools-quote">
+            <span>“</span>
+            <p>
+              Ferramentas certas<br />
+              para resultados melhores.
+            </p>
+          </div>
+
+          <div class="stat">
+            <span>♙</span>
+
+            <div>
+              <strong>31</strong>
+              <small>ALUNOS</small>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span>▣</span>
+
+            <div>
+              <strong>6 / 20</strong>
+              <small>MATÉRIAS CONCLUÍDAS</small>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span>▣</span>
+
+            <div>
+              <strong>2026</strong>
+              <small>ANO DA TURMA</small>
+            </div>
+          </div>
+
+          <div class="stat progress-stat">
+            <div class="progress-circle">30%</div>
+
+            <div>
+              <strong>30%</strong>
+              <small>PROGRESSO DO CURSO</small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  <footer class="footer" id="sobre">
+    <div class="footer-line"></div>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="brand"><span class="brand-mark">ϟ</span><span><strong>ELETROTÉCNICA</strong><b>2026</b></span></div><p>Turma de Eletrotécnica 2026 – SENAI</p></div>
+      <div><h3>NAVEGAÇÃO</h3><a href="index.html">Início</a><a href="materias.html">Matérias</a><a href="ferramentas.html">Cálculos</a><a href="normas.html">Normas</a><a href="senai.html">SENAI</a><a href="sobre.html">Sobre</a></div>
+      <div id="senai"><h3>SOBRE O PROJETO</h3><p>Este site é um projeto da turma de Eletrotécnica 2026 com o objetivo de centralizar conhecimentos e ferramentas úteis para os estudos.</p></div>
+    </div>
+    <div class="footer-bottom"><a href="https://victoroliveiratec.github.io/Portifolio/" target="_blank"><span>© 2026 Eletrotécnica 2026. Todos os direitos reservados.</span><span>Desenvolvido Por Victor Hugo</a></span></div>
+  </footer>
+  </body>
+</html>

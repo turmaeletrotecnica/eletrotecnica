@@ -1,0 +1,47 @@
+.hero {
+  height: 334px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #10191e;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 80% 45%,
+      rgba(80, 95, 105, 0.34),
+      transparent 27%
+    ),
+    linear-gradient(
+      90deg,
+      #071015 20%,
+      rgba(7, 16, 21, 0.9) 50%,
+      rgba(7, 16, 21, 0.35)
+    ),
+    url("../img/hero-bg.svg") center/cover;
+}
+.hero-content {
+  width: min(var(--max), calc(100% - 64px));
+  margin: auto;
+  padding-top: 35px;
+  position: relative;
+}
+.bolt {
+  color: var(--red);
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.08;
+  letter-spacing: 0.3px;
+}
+.hero h1 span {
+  color: var(--red);
+}
+.hero p {
+  margin-top: 13px;
+  color: #f0f0f0;
+  font-size: 14px;
+}

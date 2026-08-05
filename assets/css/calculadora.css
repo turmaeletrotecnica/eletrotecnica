@@ -1,0 +1,72 @@
+.calculator-card {
+  padding-left: 0;
+}
+.calculator {
+  border: 1px solid #364047;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #171f24, #10171c);
+  padding: 17px;
+}
+.calculator h3 {
+  color: var(--red);
+  font-size: 18px;
+}
+.formula {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.fields label {
+  font-size: 11px;
+  color: #e4e6e7;
+}
+.fields label > div {
+  display: flex;
+  margin-top: 5px;
+}
+.fields input {
+  width: 100%;
+  background: #10171c;
+  border: 1px solid #303a40;
+  border-radius: 6px 0 0 6px;
+  color: #fff;
+  padding: 9px;
+}
+.fields span {
+  padding: 9px 8px;
+  background: #20282e;
+  border: 1px solid #303a40;
+  border-left: 0;
+  border-radius: 0 6px 6px 0;
+}
+.calc-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 17px;
+  border-top: 1px solid #303940;
+  padding-top: 10px;
+}
+.calc-bottom button {
+  background: var(--red);
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 11px;
+}
+.calc-bottom div {
+  padding-left: 20px;
+}
+.calc-bottom small {
+  display: block;
+  color: #aeb5b9;
+  font-size: 10px;
+}
+.calc-bottom strong {
+  font-size: 24px;
+  color: var(--red);
+}

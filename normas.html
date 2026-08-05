@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Normas técnicas e regulamentadoras utilizadas na formação em Eletrotécnica." />
+
+  <title>Normas | Eletrotécnica 2026</title>
+
+  <!-- CSS GLOBAL EXISTENTE -->
+  <link rel="shortcut icon" href="assets/img/logotransparente.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- CSS ESPECÍFICO DA PÁGINA -->
+  <link rel="stylesheet" href="assets/css/normas.css" />
+</head>
+
+<body>
+  <!-- =====================================================
+       HEADER
+       REUTILIZAR O HEADER EXISTENTE
+       ===================================================== -->
+
+  <header class="header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">ϟ</span>
+
+      <span>
+        <strong>ELETROTÉCNICA</strong>
+        <b>2026</b>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html">INÍCIO</a>
+      <a href="materias.html">MATÉRIAS</a>
+      <a href="ferramentas.html">FERRAMENTAS</a>
+      <a class="active" href="normas.html">NORMAS</a>
+      <a href="senai.html">SENAI</a>
+      <a href="sobre.html">SOBRE</a>
+    </nav>
+
+    <button class="search-btn" type="button">⌕ <span>BUSCAR</span></button>
+  </header>
+
+  <main>
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="normas-hero">
+      <div class="normas-hero-bg"></div>
+
+      <div class="normas-hero-content">
+        <span class="normas-bolt">ϟ</span>
+
+        <h1>
+          NORMAS<br />
+          <span>TÉCNICAS.</span>
+        </h1>
+
+        <p>
+          Referências técnicas e regulamentadoras essenciais para instalações,
+          segurança e sistemas elétricos.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         NORMAS PRINCIPAIS
+         ===================================================== -->
+
+    <section class="normas-section">
+      <div class="normas-section-title">
+        <h2>NORMAS PRINCIPAIS</h2>
+      </div>
+
+      <div class="normas-feature-grid">
+        <article class="norma-feature">
+          <div class="norma-feature-icon">ϟ</div>
+
+          <div>
+            <span class="norma-code"> NBR 5410 </span>
+
+            <h3>Instalações Elétricas de Baixa Tensão</h3>
+
+            <p>Requisitos para instalações elétricas de baixa tensão.</p>
+          </div>
+
+          <a href="#nbr-5410">
+            VER NORMA
+            <span>→</span>
+          </a>
+        </article>
+
+        <article class="norma-feature">
+          <div class="norma-feature-icon">⚠</div>
+
+          <div>
+            <span class="norma-code"> NR-10 </span>
+
+            <h3>Segurança em Instalações Elétricas</h3>
+
+            <p>Requisitos e medidas de segurança para trabalhos elétricos.</p>
+          </div>
+
+          <a href="#nr-10">
+            VER NORMA
+            <span>→</span>
+          </a>
+        </article>
+
+        <article class="norma-feature">
+          <div class="norma-feature-icon">3~</div>
+
+          <div>
+            <span class="norma-code"> NBR 14039 </span>
+
+            <h3>Instalações Elétricas de Média Tensão</h3>
+
+            <p>
+              Instalações elétricas de média tensão entre 1,0 kV e 36,2 kV.
+            </p>
+          </div>
+
+          <a href="#nbr-14039">
+            VER NORMA
+            <span>→</span>
+          </a>
+        </article>
+
+        <article class="norma-feature">
+          <div class="norma-feature-icon">⚡</div>
+
+          <div>
+            <span class="norma-code"> NBR 5419 </span>
+
+            <h3>Proteção contra Descargas Atmosféricas</h3>
+
+            <p>
+              Princípios e requisitos para proteção contra descargas
+              atmosféricas.
+            </p>
+          </div>
+
+          <a href="#nbr-5419">
+            VER NORMA
+            <span>→</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         BUSCA
+         ===================================================== -->
+
+    <section class="normas-section normas-consulta">
+      <div class="normas-section-title">
+        <h2>CONSULTA DE NORMAS</h2>
+
+        <p>
+          Encontre rapidamente a norma ou regulamentação que você precisa.
+        </p>
+      </div>
+
+      <div class="normas-search">
+        <div class="normas-search-input">
+          <span>⌕</span>
+
+          <input id="normaBusca" type="search" placeholder="Pesquisar por nome, código ou assunto..."
+            autocomplete="off" />
+        </div>
+
+        <select id="normaCategoria">
+          <option value="todas">Todas as categorias</option>
+
+          <option value="nbr">NBR / ABNT</option>
+
+          <option value="nr">NR</option>
+
+          <option value="iec">IEC</option>
+        </select>
+      </div>
+
+      <div class="normas-resultados" id="normasResultados">
+        <!-- NBR 5410 -->
+
+        <article class="norma-card" id="nbr-5410" data-categoria="nbr"
+          data-search="nbr 5410 instalações elétricas baixa tensão abnt">
+          <div class="norma-card-top">
+            <span class="norma-card-code"> NBR 5410 </span>
+
+            <span class="norma-card-type"> ABNT </span>
+          </div>
+
+          <h3>Instalações elétricas de baixa tensão</h3>
+
+          <p>
+            Norma fundamental para projetos e instalações elétricas de baixa
+            tensão.
+          </p>
+
+          <div class="norma-card-footer">
+            <span> Instalações elétricas </span>
+
+            <a href="#" class="norma-link"> DETALHES → </a>
+          </div>
+        </article>
+
+        <!-- NR-10 -->
+
+        <article class="norma-card" id="nr-10" data-categoria="nr"
+          data-search="nr 10 segurança instalações serviços eletricidade">
+          <div class="norma-card-top">
+            <span class="norma-card-code"> NR-10 </span>
+
+            <span class="norma-card-type"> NR </span>
+          </div>
+
+          <h3>Segurança em instalações e serviços em eletricidade</h3>
+
+          <p>
+            Estabelece requisitos e condições mínimas para segurança em
+            atividades envolvendo eletricidade.
+          </p>
+
+          <div class="norma-card-footer">
+            <span> Segurança </span>
+
+            <a href="#" class="norma-link"> DETALHES → </a>
+          </div>
+        </article>
+
+        <!-- NBR 14039 -->
+
+        <article class="norma-card" id="nbr-14039" data-categoria="nbr"
+          data-search="nbr 14039 média tensão instalações elétricas">
+          <div class="norma-card-top">
+            <span class="norma-card-code"> NBR 14039 </span>
+
+            <span class="norma-card-type"> ABNT </span>
+          </div>
+
+          <h3>Instalações elétricas de média tensão</h3>
+
+          <p>Requisitos para instalações elétricas de média tensão.</p>
+
+          <div class="norma-card-footer">
+            <span> Média tensão </span>
+
+            <a href="#" class="norma-link"> DETALHES → </a>
+          </div>
+        </article>
+
+        <!-- NBR 5419 -->
+
+        <article class="norma-card" id="nbr-5419" data-categoria="nbr"
+          data-search="nbr 5419 spda proteção descargas atmosféricas">
+          <div class="norma-card-top">
+            <span class="norma-card-code"> NBR 5419 </span>
+
+            <span class="norma-card-type"> ABNT </span>
+          </div>
+
+          <h3>Proteção contra descargas atmosféricas</h3>
+
+          <p>
+            Série relacionada à proteção de estruturas e sistemas contra
+            descargas atmosféricas.
+          </p>
+
+          <div class="norma-card-footer">
+            <span> SPDA </span>
+
+            <a href="#" class="norma-link"> DETALHES → </a>
+          </div>
+        </article>
+
+        <!-- IEC 60364 -->
+
+        <article class="norma-card" data-categoria="iec" data-search="iec 60364 instalações elétricas baixa tensão">
+          <div class="norma-card-top">
+            <span class="norma-card-code"> IEC 60364 </span>
+
+            <span class="norma-card-type"> IEC </span>
+          </div>
+
+          <h3>Low-voltage electrical installations</h3>
+
+          <p>
+            Série internacional relacionada a instalações elétricas de baixa
+            tensão.
+          </p>
+
+          <div class="norma-card-footer">
+            <span> Instalações </span>
+
+            <a href="#" class="norma-link"> DETALHES → </a>
+          </div>
+        </article>
+
+        <!-- NBR 5413 -->
+
+        <article class="norma-card" data-categoria="nbr" data-search="nbr 5413 iluminação interiores iluminância">
+          <div class="norma-card-top">
+            <span class="norma-card-code"> NBR 5413 </span>
+
+            <span class="norma-card-type"> ABNT </span>
+          </div>
+
+          <h3>Iluminância de interiores</h3>
+
+          <p>
+            Referência histórica para níveis de iluminância em ambientes
+            internos.
+          </p>
+
+          <div class="norma-card-footer">
+            <span> Iluminação </span>
+
+            <a href="#" class="norma-link"> DETALHES → </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="normas-empty" id="normasEmpty" hidden>
+        <span>ϟ</span>
+
+        <h3>Nenhuma norma encontrada</h3>
+
+        <p>Tente pesquisar por outro código, nome ou categoria.</p>
+      </div>
+    </section>
+
+    <section class="normas-section">
+      <div class="normas-section-title">
+        <h2>CATEGORIAS</h2>
+      </div>
+
+      <div class="normas-category-grid">
+        <article class="norma-category">
+          <span>ϟ</span>
+
+          <div>
+            <h3>Instalações Elétricas</h3>
+
+            <p>Normas relacionadas a instalações de baixa e média tensão.</p>
+          </div>
+        </article>
+
+        <article class="norma-category">
+          <span>⚠</span>
+
+          <div>
+            <h3>Segurança</h3>
+
+            <p>Requisitos de segurança para trabalhos com eletricidade.</p>
+          </div>
+        </article>
+
+        <article class="norma-category">
+          <span>☷</span>
+
+          <div>
+            <h3>Máquinas e Equipamentos</h3>
+
+            <p>
+              Referências relacionadas a máquinas, equipamentos e sistemas
+              industriais.
+            </p>
+          </div>
+        </article>
+
+        <article class="norma-category">
+          <span>⚡</span>
+
+          <div>
+            <h3>Proteção</h3>
+
+            <p>
+              Proteção contra surtos, descargas atmosféricas e riscos
+              elétricos.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="normas-warning">
+      <span class="normas-warning-icon"> ! </span>
+
+      <div>
+        <h3>IMPORTANTE</h3>
+
+        <p>
+          As informações apresentadas nesta página têm finalidade educacional.
+          Para projetos, instalações e atividades profissionais, consulte
+          sempre a edição vigente da norma e as exigências legais aplicáveis.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="sobre">
+    <div class="footer-line"></div>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="brand"><span class="brand-mark">ϟ</span><span><strong>ELETROTÉCNICA</strong><b>2026</b></span></div><p>Turma de Eletrotécnica 2026 – SENAI</p></div>
+      <div><h3>NAVEGAÇÃO</h3><a href="index.html">Início</a><a href="materias.html">Matérias</a><a href="ferramentas.html">Cálculos</a><a href="normas.html">Normas</a><a href="senai.html">SENAI</a><a href="sobre.html">Sobre</a></div>
+      <div id="senai"><h3>SOBRE O PROJETO</h3><p>Este site é um projeto da turma de Eletrotécnica 2026 com o objetivo de centralizar conhecimentos e ferramentas úteis para os estudos.</p></div>
+    </div>
+    <div class="footer-bottom"><a href="https://victoroliveiratec.github.io/Portifolio/" target="_blank"><span>© 2026 Eletrotécnica 2026. Todos os direitos reservados.</span><span>Desenvolvido Por Victor Hugo</a></span></div>
+  </footer>
+
+  <script src="js/normas.js" defer></script>
+</body>
+
+</html>

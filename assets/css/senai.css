@@ -1,0 +1,649 @@
+/* =========================================================
+   SENAI — HERO
+   ========================================================= */
+
+.senai-hero {
+  position: relative;
+
+  min-height: 325px;
+
+  overflow: hidden;
+
+  border-bottom: 1px solid var(--border);
+
+  background:
+    linear-gradient(
+      90deg,
+      #050b0f 0%,
+      #071015 42%,
+      #0b151a 100%
+    );
+}
+
+.senai-hero-bg {
+  position: absolute;
+  inset: 0;
+
+  opacity: .35;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 10, 14, 1),
+      rgba(4, 10, 14, .55),
+      rgba(4, 10, 14, .15)
+    );
+
+  pointer-events: none;
+}
+
+.senai-hero-content {
+  position: relative;
+  z-index: 1;
+
+  width: min(
+    var(--max),
+    calc(100% - 54px)
+  );
+
+  min-height: 325px;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.senai-bolt {
+  margin-bottom: 8px;
+
+  color: var(--red);
+
+  font-size: 38px;
+  line-height: 1;
+}
+
+.senai-hero h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 5vw, 56px);
+  line-height: .95;
+
+  font-weight: 900;
+
+  letter-spacing: -1.5px;
+}
+
+.senai-hero h1 span {
+  color: var(--red);
+}
+
+.senai-hero p {
+  max-width: 390px;
+
+  margin: 14px 0 0;
+
+  color: #c5cdd1;
+
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   SEÇÕES
+   ========================================================= */
+
+.senai-section {
+  width: min(
+    var(--max),
+    calc(100% - 54px)
+  );
+
+  margin: auto;
+}
+
+.senai-section-title {
+  padding-top: 22px;
+
+  margin-bottom: 15px;
+}
+
+.senai-section-title h2 {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.1;
+}
+
+.senai-section-title h2::after {
+  content: "";
+
+  display: block;
+
+  width: 36px;
+  height: 2px;
+
+  margin-top: 7px;
+
+  background: var(--red);
+}
+
+.senai-section-title p {
+  margin: 8px 0 0;
+
+  color: var(--muted);
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   CENTRAL DO ALUNO
+   ========================================================= */
+
+.senai-access-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 11px;
+}
+
+.senai-access-card {
+  position: relative;
+
+  min-height: 145px;
+
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid var(--border);
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #10191f,
+      #0a1217
+    );
+
+  color: inherit;
+
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition:
+    transform .2s ease,
+    border-color .2s ease;
+}
+
+.senai-access-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -30px;
+  bottom: -35px;
+
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(220, 0, 10, .035);
+
+  pointer-events: none;
+}
+
+.senai-access-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #3d484e;
+}
+
+.senai-access-icon {
+  width: 38px;
+  height: 38px;
+
+  margin-bottom: 10px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(130, 8, 14, .22);
+
+  color: var(--red);
+
+  font-size: 19px;
+}
+
+.senai-access-content {
+  padding-right: 18px;
+}
+
+.senai-access-tag {
+  color: var(--red);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: .5px;
+}
+
+.senai-access-card h3 {
+  margin: 4px 0 5px;
+
+  font-size: 14px;
+}
+
+.senai-access-card p {
+  margin: 0;
+
+  color: #9fa9ae;
+
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.senai-arrow {
+  position: absolute;
+
+  right: 14px;
+  bottom: 13px;
+
+  color: var(--red);
+
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   CURSO
+   ========================================================= */
+
+.senai-course {
+  margin-top: 20px;
+
+  padding: 20px;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: 25px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #10191f,
+      #091116
+    );
+}
+
+.senai-course-label {
+  color: var(--red);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.senai-course h2 {
+  margin: 7px 0 10px;
+
+  font-size: 25px;
+  line-height: 1;
+}
+
+.senai-course h2 span {
+  color: var(--red);
+}
+
+.senai-course p {
+  max-width: 580px;
+
+  margin: 0 0 8px;
+
+  color: #aeb7bc;
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.senai-course-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 8px;
+}
+
+.senai-stat {
+  min-height: 80px;
+
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 6px;
+
+  background: rgba(255,255,255,.025);
+}
+
+.senai-stat strong {
+  color: #e9ecee;
+
+  font-size: 22px;
+  line-height: 1;
+}
+
+.senai-stat span {
+  margin-top: 5px;
+
+  color: #7f8b91;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   LINKS ÚTEIS
+   ========================================================= */
+
+.senai-links {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 8px;
+}
+
+.senai-links a {
+  min-height: 58px;
+
+  padding: 10px 13px;
+
+  display: grid;
+
+  grid-template-columns:
+    35px 1fr auto;
+
+  grid-template-rows:
+    1fr 1fr;
+
+  column-gap: 10px;
+
+  align-items: center;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  background: #0d161b;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  transition:
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.senai-links a:hover {
+  border-color: #3b474e;
+
+  transform: translateY(-2px);
+}
+
+.senai-links a > span {
+  grid-row: 1 / 3;
+
+  width: 32px;
+  height: 32px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--red);
+
+  background:
+    rgba(130, 8, 14, .2);
+}
+
+.senai-links strong {
+  align-self: end;
+
+  font-size: 10px;
+}
+
+.senai-links small {
+  align-self: start;
+
+  color: #707c82;
+
+  font-size: 8px;
+}
+
+.senai-links b {
+  grid-column: 3;
+  grid-row: 1 / 3;
+
+  color: var(--red);
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES
+   ========================================================= */
+
+.senai-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.senai-info-card {
+  min-height: 92px;
+
+  padding: 13px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  background: #0d161b;
+}
+
+.senai-info-card span {
+  color: var(--red);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: .5px;
+}
+
+.senai-info-card strong {
+  margin: 6px 0 3px;
+
+  color: #e3e7e9;
+
+  font-size: 13px;
+}
+
+.senai-info-card small {
+  color: #707c82;
+
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   AVISO
+   ========================================================= */
+
+.senai-notice {
+  width: min(
+    var(--max),
+    calc(100% - 54px)
+  );
+
+  margin: 0 auto 20px;
+
+  padding: 13px 15px;
+
+  display: flex;
+
+  gap: 12px;
+
+  align-items: flex-start;
+
+  border: 1px solid rgba(220, 0, 10, .2);
+  border-radius: 7px;
+
+  background:
+    rgba(100, 7, 12, .07);
+}
+
+.senai-notice-icon {
+  width: 30px;
+  height: 30px;
+
+  flex: 0 0 30px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--red);
+
+  background:
+    rgba(130, 8, 14, .2);
+
+  font-weight: 900;
+}
+
+.senai-notice h3 {
+  margin: 0 0 4px;
+
+  color: var(--red);
+
+  font-size: 9px;
+}
+
+.senai-notice p {
+  margin: 0;
+
+  color: #9fa9ae;
+
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE ESPECÍFICA DA PÁGINA
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .senai-access-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .senai-info-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .senai-course {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .senai-hero-content {
+    width: calc(100% - 32px);
+  }
+
+  .senai-hero {
+    min-height: 290px;
+  }
+
+  .senai-hero-content {
+    min-height: 290px;
+  }
+
+  .senai-hero h1 {
+    font-size: 40px;
+  }
+
+  .senai-section,
+  .senai-notice {
+    width: calc(100% - 32px);
+  }
+
+  .senai-access-grid,
+  .senai-links,
+  .senai-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .senai-course {
+    padding: 15px;
+  }
+
+  .senai-course-stats {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 380px) {
+
+  .senai-course-stats {
+    grid-template-columns: 1fr;
+  }
+
+}

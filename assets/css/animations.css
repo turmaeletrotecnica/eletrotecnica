@@ -1,0 +1,20 @@
+.quick-card,
+.subject,
+.tool,
+.consult {
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.quick-card:hover,
+.subject:hover,
+.consult:hover {
+  transform: translateY(-2px);
+  border-color: #3c4850;
+}
+
+.tool:hover {
+  transition: 0.2s;
+}

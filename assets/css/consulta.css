@@ -1,0 +1,50 @@
+.consult-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.consult {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px 18px;
+  background: #111a20;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.consult:nth-child(even) {
+  border-right: 0;
+}
+.consult:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+.consult > span {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+.consult.gold span {
+  background: #4b3919;
+}
+.consult.purple span {
+  background: #3a1c50;
+}
+.consult.cyan span {
+  background: #124b68;
+}
+.consult.green span {
+  background: #174b31;
+}
+.consult h3 {
+  font-size: 13px;
+}
+.consult p {
+  font-size: 11px;
+  color: #b6bdc1;
+}

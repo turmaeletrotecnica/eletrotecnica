@@ -1,0 +1,52 @@
+.section {
+  width: min(var(--max), calc(100% - 64px));
+  margin: 0 auto 28px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.section-heading h2 {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+.section-heading h2:after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 2px;
+  background: var(--red);
+  margin-top: 5px;
+}
+.section-heading a {
+  font-size: 13px;
+  color: #fff;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: #fff;
+  transform: skew(-7deg);
+}
+.brand strong {
+  display: block;
+  font-size: 17px;
+  line-height: 1;
+}
+.brand b {
+  display: block;
+  color: var(--red);
+  font-size: 16px;
+}
