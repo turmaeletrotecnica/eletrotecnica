@@ -34,7 +34,7 @@ async function carregarAlunos() {
 
                 <h3>${aluno.nome}</h3>
 
-                <span>Eletrotécnica 2026</span>
+                <span>${aluno.curso}</span>
 
                 <div class="student-links">
 

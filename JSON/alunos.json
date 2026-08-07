@@ -1,5 +1,21 @@
 [
   {
+    "nome": "Gustavo Pacheco",
+    "foto": "assets/img/alunos/gustavo-pacheco.jpg",
+    "curso": "Professor | Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
+  },
+  {
+    "nome": "Misael",
+    "foto": "assets/img/alunos/misael.jpg",
+    "curso": "Professor | Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
+  },
+  {
     "nome": "VICTOR HUGO",
     "foto": "assets/img/alunos/victor-hugo.jpg",
     "curso": "Lider Sala | Eletrotécnica 2026",
@@ -186,6 +202,39 @@
   {
     "nome": "Pedro Duque",
     "foto": "assets/img/alunos/pedro-duque.jpg",
+    "curso": "Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
+  },
+  {
+    "nome": "Sergio",
+    "foto": "assets/img/alunos/sergio.jpg",
+    "curso": "Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
+  }
+  ,
+  {
+    "nome": "Yan Filipe",
+    "foto": "assets/img/alunos/yan-filipe.jpg",
+    "curso": "Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
+  },
+  {
+    "nome": "Welves",
+    "foto": "assets/img/alunos/welves.jpg",
+    "curso": "Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
+  },
+  {
+    "nome": "Rhayson",
+    "foto": "assets/img/alunos/rhayson.jpg",
     "curso": "Eletrotécnica 2026",
     "whatsapp": "https://wa.me/55",
     "linkedin": "#",
