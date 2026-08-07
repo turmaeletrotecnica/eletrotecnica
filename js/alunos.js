@@ -6,7 +6,7 @@ async function carregarAlunos() {
 
     try {
 
-        const resposta = await fetch("../JSON/alunos.json");
+        const resposta = await fetch("./JSON/alunos.json");
 
         if (!resposta.ok) {
             throw new Error("Erro ao carregar alunos.json");
