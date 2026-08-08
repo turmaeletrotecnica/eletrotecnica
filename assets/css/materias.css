@@ -1,0 +1,641 @@
+/* =========================================================
+   MATÉRIAS
+   ELETROTÉCNICA 2026
+========================================================= */
+
+/* =========================================================
+   VARIÁVEIS LOCAIS
+========================================================= */
+
+:root {
+  --materias-red: #ed1c24;
+  --materias-red-dark: #b90008;
+
+  --materias-black: #050505;
+  --materias-black-2: #0a0a0a;
+  --materias-card: #0d0f10;
+
+  --materias-border: #292929;
+
+  --materias-white: #f5f5f5;
+  --materias-gray: #a5a5a5;
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.materias-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 70% 15%,
+      rgba(237, 28, 36, 0.06),
+      transparent 35%
+    ),
+    var(--materias-black);
+
+  color: var(--materias-white);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.materias-hero {
+  position: relative;
+
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 5% 50px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    90deg,
+    #050505 0%,
+    rgba(5, 5, 5, 0.96) 35%,
+    rgba(5, 5, 5, 0.75) 65%,
+    rgba(5, 5, 5, 0.95) 100%
+  );
+}
+
+.materias-hero::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  opacity: 0.4;
+
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 600px;
+}
+
+.hero-icon {
+  color: var(--materias-red);
+
+  font-size: 35px;
+
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 0.98;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+  color: var(--materias-red);
+}
+
+.hero-line {
+  width: 35px;
+  height: 3px;
+
+  background: var(--materias-red);
+
+  margin: 20px 0;
+}
+
+.hero-content p {
+  color: #c5c5c5;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+/* =========================================================
+   MATÉRIAS
+========================================================= */
+
+.materias-section {
+  padding: 30px 4% 50px;
+}
+
+.materias-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.section-label {
+  font-size: 11px;
+
+  color: var(--materias-red);
+
+  letter-spacing: 2px;
+}
+
+.materias-header h2 {
+  margin: 5px 0 0;
+
+  font-size: 25px;
+}
+
+.materias-count {
+  color: var(--materias-gray);
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.materias-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.materia-card {
+  position: relative;
+
+  min-height: 150px;
+
+  padding: 22px;
+
+  border: 1px solid var(--materias-border);
+
+  border-radius: 7px;
+
+  background: linear-gradient(145deg, #111313, #080909);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.materia-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #555;
+
+  background: linear-gradient(145deg, #151717, #0b0c0c);
+}
+
+.materia-card.active {
+  border-color: var(--materias-red);
+
+  box-shadow: 0 8px 30px rgba(237, 28, 36, 0.08);
+}
+
+.materia-numero {
+  display: block;
+
+  color: var(--materias-red);
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.materia-card h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
+}
+
+.materia-card p {
+  margin: 0;
+
+  color: var(--materias-gray);
+
+  font-size: 13px;
+}
+
+.materia-arrow {
+  position: absolute;
+
+  right: 20px;
+  bottom: 18px;
+
+  color: var(--materias-red);
+
+  font-size: 22px;
+}
+
+/* =========================================================
+   CONTEÚDO
+========================================================= */
+
+.conteudo-section {
+  display: none;
+
+  padding: 0 4% 60px;
+}
+
+.conteudo-section.open {
+  display: block;
+}
+
+.conteudo-container {
+  display: grid;
+
+  grid-template-columns: 250px minmax(0, 1fr);
+
+  min-height: 600px;
+
+  border: 1px solid var(--materias-red);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  background: #090a0a;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.conteudo-sidebar {
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 18px;
+
+  border-right: 1px solid #252525;
+
+  background: #0b0c0c;
+}
+
+.sidebar-header {
+  display: flex;
+
+  gap: 12px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #242424;
+}
+
+.sidebar-numero {
+  color: var(--materias-red);
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+.sidebar-header strong {
+  display: block;
+
+  font-size: 15px;
+}
+
+.sidebar-header small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: var(--materias-gray);
+
+  font-size: 11px;
+}
+
+/* =========================================================
+   LISTA
+========================================================= */
+
+.conteudo-lista {
+  flex: 1;
+
+  overflow-y: auto;
+
+  margin: 15px 0;
+}
+
+.conteudo-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  width: 100%;
+
+  padding: 8px 7px;
+
+  border: 0;
+
+  border-radius: 4px;
+
+  background: transparent;
+
+  color: #ddd;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  transition: 0.2s;
+}
+
+.conteudo-item span {
+  color: #888;
+
+  min-width: 20px;
+}
+
+.conteudo-item:hover {
+  background: #171818;
+}
+
+.conteudo-item.active {
+  background: var(--materias-red);
+
+  color: white;
+}
+
+.conteudo-item.active span {
+  color: white;
+}
+
+/* =========================================================
+   BOTÃO VOLTAR
+========================================================= */
+
+.btn-voltar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 38px;
+
+  border: 1px solid #333;
+
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  transition: 0.2s;
+}
+
+.btn-voltar:hover {
+  border-color: var(--materias-red);
+
+  color: var(--materias-red);
+}
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+========================================================= */
+
+.conteudo-main {
+  position: relative;
+
+  padding: 45px 40px 30px;
+}
+
+.conteudo-fechar {
+  position: absolute;
+
+  top: 18px;
+  right: 20px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 30px;
+
+  cursor: pointer;
+}
+
+.conteudo-titulo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.conteudo-titulo span {
+  color: var(--materias-red);
+
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+.conteudo-titulo h2 {
+  margin: 0;
+
+  max-width: 750px;
+
+  font-size: 27px;
+}
+
+.conteudo-red-line {
+  width: 32px;
+  height: 3px;
+
+  margin: 14px 0 20px;
+
+  background: var(--materias-red);
+}
+
+.conteudo-descricao {
+  max-width: 850px;
+
+  color: #ddd;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.conteudo-texto {
+  max-width: 850px;
+
+  margin-top: 25px;
+}
+
+.conteudo-texto p {
+  margin: 0 0 15px;
+
+  color: #bdbdbd;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.conteudo-texto p::before {
+  content: "✓";
+
+  display: inline-block;
+
+  margin-right: 10px;
+
+  color: var(--materias-red);
+}
+
+/* =========================================================
+   NAVEGAÇÃO
+========================================================= */
+
+.conteudo-navegacao {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 50px;
+}
+
+.btn-navegacao {
+  min-width: 110px;
+
+  padding: 11px 15px;
+
+  border: 1px solid #333;
+
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn-navegacao:hover:not(:disabled) {
+  border-color: var(--materias-red);
+}
+
+.btn-proximo {
+  border-color: var(--materias-red);
+
+  background: var(--materias-red);
+}
+
+.btn-proximo:hover:not(:disabled) {
+  background: var(--materias-red-dark);
+}
+
+.btn-navegacao:disabled {
+  opacity: 0.3;
+
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 900px) {
+  .materias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo-container {
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo-sidebar {
+    border-right: 0;
+
+    border-bottom: 1px solid #252525;
+  }
+
+  .conteudo-lista {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 650px) {
+  .materias-hero {
+    min-height: 350px;
+
+    padding: 60px 25px 40px;
+  }
+
+  .materias-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .conteudo-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .conteudo-main {
+    padding: 35px 20px 25px;
+  }
+
+  .conteudo-titulo h2 {
+    font-size: 21px;
+  }
+
+  .conteudo-navegacao {
+    justify-content: space-between;
+  }
+}
