@@ -249,6 +249,38 @@
           ]
         }
       ]
+    },
+    {
+      "id": "SEP",
+      "numero": "03",
+      "nome": "Sistema Eletrico De Potência",
+      "descricao": "Sistema Eletrico De Potência",
+      "conteudos": [
+        {
+          "id": 1,
+          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "conteudo": [
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Manutenções Elétricas De Potência",
+      "numero": "04",
+      "nome": "Manutenções Elétricas De Potência",
+      "descricao": "Manutenções Elétricas De Potência",
+      "conteudos": [
+        {
+          "id": 1,
+          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "conteudo": [
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          ]
+        }
+      ]
     }
   ]
 }
