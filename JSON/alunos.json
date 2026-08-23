@@ -239,5 +239,21 @@
     "whatsapp": "https://wa.me/55",
     "linkedin": "#",
     "email": ""
+  },
+  {
+    "nome": "Roberto",
+    "foto": "assets/img/alunos/roberto.jpg",
+    "curso": "Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
+  },
+  {
+    "nome": "Samuel",
+    "foto": "assets/img/alunos/samuel.jpg",
+    "curso": "Eletrotécnica 2026",
+    "whatsapp": "https://wa.me/55",
+    "linkedin": "#",
+    "email": ""
   }
 ]
