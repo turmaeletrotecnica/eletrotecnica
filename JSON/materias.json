@@ -67,6 +67,86 @@
           ]
         }
       ]
+    },
+    {
+      "id": "GESTÃO DA MANUTENÇÃO",
+      "numero": "05",
+      "nome": "GESTÃO DA MANUTENÇÃO",
+      "descricao": "GESTÃO DA MANUTENÇÃO",
+      "conteudos": [
+        {
+          "id": 1,
+          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "conteudo": [
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INSTALAÇÕES ELÉTRICAS INDÚSTRIAS",
+      "numero": "06",
+      "nome": "INSTALAÇÕES ELÉTRICAS INDÚSTRIAS",
+      "descricao": "INSTALAÇÕES ELÉTRICAS INDÚSTRIAS",
+      "conteudos": [
+        {
+          "id": 1,
+          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "conteudo": [
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INTRODUÇÃO À INDÚSTRIA 4.0",
+      "numero": "07",
+      "nome": "INTRODUÇÃO À INDÚSTRIA 4.0",
+      "descricao": "INTRODUÇÃO À INDÚSTRIA 4.0",
+      "conteudos": [
+        {
+          "id": 1,
+          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "conteudo": [
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MANUTENÇÃO ELÉTRICA INDUSTRIAL",
+      "numero": "08",
+      "nome": "MANUTENÇÃO ELÉTRICA INDUSTRIAL",
+      "descricao": "MANUTENÇÃO ELÉTRICA INDUSTRIAL",
+      "conteudos": [
+        {
+          "id": 1,
+          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "conteudo": [
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SAÚDE, SEGURANÇA DO TRABALHO E MEIO AMBIENTE",
+      "numero": "09",
+      "nome": "SAÚDE, SEGURANÇA DO TRABALHO E MEIO AMBIENTE",
+      "descricao": "SAÚDE, SEGURANÇA DO TRABALHO E MEIO AMBIENTE",
+      "conteudos": [
+        {
+          "id": 1,
+          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "conteudo": [
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          ]
+        }
+      ]
     }
   ]
 }
