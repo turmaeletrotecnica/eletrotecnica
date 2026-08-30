@@ -340,3 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+function mensagemconstrucao() {
+  alert("Esta ferramenta ainda está em construção. Em breve estará disponível!");
+}
