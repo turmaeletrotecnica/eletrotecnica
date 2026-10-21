@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const materiasCount = document.getElementById("materias-count");
 
+  const materiasBusca = document.getElementById("materiasBusca");
+
   const conteudoSection = document.getElementById("conteudo-section");
 
   const conteudoLista = document.getElementById("conteudo-lista");
@@ -94,9 +96,17 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderizarMaterias() {
     materiasGrid.innerHTML = "";
 
-    materiasCount.textContent = `${materias.length} matérias`;
+    const termo = normalizar(materiasBusca?.value || "");
+    const filtradas = materias.filter((materia) => {
+      const texto = normalizar(`${materia.nome} ${materia.descricao}`);
+      return texto.includes(termo);
+    });
 
-    materias.forEach((materia) => {
+    materiasCount.textContent = termo
+      ? `${filtradas.length} de ${materias.length} matérias`
+      : `${materias.length} matérias`;
+
+    filtradas.forEach((materia) => {
       const card = document.createElement("article");
 
       card.className = "materia-card";
@@ -127,6 +137,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       materiasGrid.appendChild(card);
     });
+
+    if (!filtradas.length) {
+      materiasGrid.innerHTML = `<p class="materias-resultado-vazio">Nenhuma matéria encontrada para “${materiasBusca.value}”.</p>`;
+    }
+  }
+
+  function normalizar(texto) {
+    return texto
+      .toLocaleLowerCase("pt-BR")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
   }
 
   /* =======================================================
@@ -301,6 +322,8 @@ document.addEventListener("DOMContentLoaded", () => {
   btnVoltar.addEventListener("click", fecharConteudo);
 
   btnFechar.addEventListener("click", fecharConteudo);
+
+  materiasBusca?.addEventListener("input", renderizarMaterias);
 
   function fecharConteudo() {
     conteudoSection.classList.remove("open");

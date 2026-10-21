@@ -1,0 +1,144 @@
+/* Busca global */
+.busca-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 9vh 20px 30px;
+  background: rgba(0, 0, 0, .78);
+}
+
+.busca-modal.aberta { display: flex; }
+
+.busca-dialog {
+  width: min(620px, 100%);
+  max-height: 82vh;
+  overflow: auto;
+  padding: 24px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #eef1f2;
+  background: #101415;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .45);
+}
+
+.busca-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.busca-label {
+  color: #e6b800;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.busca-dialog h2 { margin: 6px 0 0; font-size: 24px; }
+
+.busca-fechar {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #3c4548;
+  border-radius: 50%;
+  color: #fff;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.busca-campo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border: 1px solid #59656a;
+  border-radius: 6px;
+  background: #0a0e0f;
+}
+
+.busca-campo span { color: #e6b800; font-size: 22px; }
+.busca-campo input {
+  width: 100%;
+  height: 48px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background: transparent;
+  font: inherit;
+}
+
+.busca-ajuda { margin: 10px 0 16px; color: #8f9a9e; font-size: 12px; }
+.busca-resultados { display: grid; gap: 8px; }
+
+.busca-resultado {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px;
+  border: 1px solid #263033;
+  border-radius: 6px;
+  color: inherit;
+  text-decoration: none;
+  background: #131a1c;
+  transition: border-color .2s, transform .2s;
+}
+
+.busca-resultado:hover, .busca-resultado:focus-visible {
+  border-color: #e6b800;
+  transform: translateX(3px);
+  outline: 0;
+}
+
+.busca-resultado-icone { color: #e6b800; font-size: 20px; }
+.busca-resultado strong, .busca-resultado small { display: block; }
+.busca-resultado strong { font-size: 14px; }
+.busca-resultado small { margin-top: 4px; color: #9da8ab; font-size: 11px; }
+.busca-vazio { margin: 8px 0; color: #aab4b7; font-size: 13px; }
+
+/* Filtro da página de matérias */
+.materias-filtros { display: flex; align-items: center; gap: 10px; margin-top: 16px; }
+.materias-filtro-input {
+  width: min(360px, 100%);
+  height: 40px;
+  padding: 0 13px;
+  border: 1px solid var(--materias-border, #303638);
+  border-radius: 6px;
+  outline: 0;
+  color: #eef1f2;
+  background: #0c0e0f;
+  font: inherit;
+}
+.materias-filtro-input:focus { border-color: #e6b800; }
+.materias-resultado-vazio { grid-column: 1 / -1; padding: 28px 0; color: #9aa5a8; }
+
+@media (max-width: 600px) {
+  .busca-modal { padding: 20px 12px; }
+  .busca-dialog { padding: 18px; }
+  .materias-filtros { align-items: stretch; flex-direction: column; }
+  .materias-filtro-input { width: 100%; }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.normas-contador {
+  margin: 12px 0 0;
+  color: #879397;
+  font-size: 11px;
+}

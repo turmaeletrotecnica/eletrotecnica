@@ -5,12 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const cards = document.querySelectorAll(".norma-card");
   const vazio = document.querySelector("#normasEmpty");
+  const contador = document.querySelector("#normasContador");
+
+  function normalizar(texto) {
+    return texto
+      .toLocaleLowerCase("pt-BR")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
 
   function filtrarNormas() {
 
-    const termo = busca.value
-      .trim()
-      .toLowerCase();
+    const termo = normalizar(busca.value.trim());
 
     const filtro = categoria.value;
 
@@ -18,8 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cards.forEach(card => {
 
-      const texto =
-        card.dataset.search.toLowerCase();
+      const texto = normalizar(card.dataset.search);
 
       const tipo =
         card.dataset.categoria;
@@ -44,6 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     vazio.hidden = encontrados !== 0;
+    contador.textContent = encontrados === cards.length
+      ? `${encontrados} normas disponíveis`
+      : `${encontrados} de ${cards.length} normas encontradas`;
   }
 
 
@@ -56,5 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "change",
     filtrarNormas
   );
+
+  filtrarNormas();
 
 });
