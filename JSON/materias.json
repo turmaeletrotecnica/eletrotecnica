@@ -4,16 +4,61 @@
       "id": "circuito-1",
       "numero": "01",
       "nome": "CIRCUITO I",
-      "descricao": "Fundamentos da Eletricidade",
+      "descricao": "Fundamentos da eletricidade, grandezas elétricas e circuitos em corrente contínua.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "Introdução à Eletricidade",
-          "descricao": "Conceitos fundamentais sobre eletricidade, cargas elétricas e os princípios básicos utilizados no estudo dos circuitos elétricos.",
+          "titulo": "Grandezas elétricas fundamentais",
+          "descricao": "Tensão, corrente, resistência, potência e energia são as grandezas que descrevem o comportamento básico de um circuito.",
           "conteudo": [
-            "A eletricidade está presente em praticamente todos os sistemas tecnológicos utilizados atualmente.",
-            "O estudo dos circuitos elétricos começa pela compreensão dos conceitos fundamentais relacionados às cargas elétricas, corrente, tensão e resistência.",
-            "A partir desses conceitos é possível compreender o funcionamento de circuitos simples e, posteriormente, sistemas elétricos mais complexos."
+            "A tensão elétrica, medida em volts (V), representa a diferença de potencial capaz de provocar o movimento de cargas. A corrente elétrica, medida em ampères (A), representa o fluxo ordenado de cargas por um condutor.",
+            "A resistência elétrica, medida em ohms (Ω), indica a oposição à passagem da corrente. O comportamento de um componente depende do material, das dimensões, da temperatura e da forma como ele é utilizado.",
+            "Potência elétrica representa a taxa de transformação ou consumo de energia. Em corrente contínua, a relação mais comum é P = V × I, em watts (W). Energia elétrica pode ser expressa em Wh ou kWh.",
+            "Antes de realizar qualquer medição, identifique a grandeza, a unidade e o instrumento adequado. Nunca trate uma instalação energizada como se fosse um circuito de bancada."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Lei de Ohm e leitura de circuitos",
+          "descricao": "Relação entre tensão, corrente e resistência em componentes que seguem comportamento aproximadamente ôhmico.",
+          "conteudo": [
+            "A Lei de Ohm é expressa por V = R × I. A partir dela, podemos calcular I = V / R ou R = V / I, desde que as unidades estejam compatíveis.",
+            "Exemplo: em um resistor de 110 Ω ligado a 220 V, a corrente ideal é I = 220 / 110 = 2 A. Em uma situação real, deve-se verificar a potência suportada pelo resistor.",
+            "O gráfico tensão versus corrente de um resistor ideal é uma reta. Lâmpadas, diodos e outros componentes podem não apresentar comportamento linear em toda a faixa de operação.",
+            "Ao resolver exercícios, liste os dados, escolha a fórmula, converta as unidades e confira se o resultado faz sentido antes de concluir."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Associação de resistores",
+          "descricao": "Cálculo de resistência equivalente em circuitos série, paralelo e mistos.",
+          "conteudo": [
+            "Em uma associação em série, a corrente é a mesma em todos os resistores e a resistência equivalente é a soma: Req = R1 + R2 + R3.",
+            "Em uma associação em paralelo, a tensão é a mesma nos ramos. Para dois resistores, pode-se usar Req = (R1 × R2) / (R1 + R2). A resistência equivalente fica menor que o menor resistor do conjunto.",
+            "Em circuitos mistos, simplifique primeiro os grupos que podem ser identificados como série ou paralelo. Repita o processo até encontrar a resistência equivalente total.",
+            "A potência dissipada deve ser verificada em cada resistor. Um valor correto de resistência equivalente não garante que todos os componentes estejam dimensionados corretamente."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Leis de Kirchhoff",
+          "descricao": "Método para analisar correntes e tensões em circuitos com vários ramos e malhas.",
+          "conteudo": [
+            "A Lei dos Nós, ou Lei das Correntes de Kirchhoff, afirma que a soma das correntes que entram em um nó é igual à soma das correntes que saem dele.",
+            "A Lei das Malhas, ou Lei das Tensões de Kirchhoff, afirma que a soma algébrica das tensões em uma malha fechada é igual a zero.",
+            "Para resolver um circuito, escolha sentidos de corrente, marque polaridades, escreva as equações e resolva o sistema. Um resultado negativo indica que o sentido adotado era oposto ao sentido real.",
+            "As leis de Kirchhoff são baseadas na conservação de carga e energia. Elas continuam úteis em circuitos que não podem ser reduzidos apenas por associações simples."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Medições e segurança em corrente contínua",
+          "descricao": "Uso básico do multímetro, identificação de grandezas e práticas seguras de medição.",
+          "conteudo": [
+            "Para medir tensão, o multímetro é ligado em paralelo com o elemento. Para medir corrente, o instrumento precisa ser inserido em série no caminho da corrente e estar na entrada correta.",
+            "A resistência deve ser medida com o circuito desenergizado e, preferencialmente, com o componente isolado do restante do circuito. Capacitores também devem ser descarregados antes da medição.",
+            "Confira a categoria de medição, a escala, as pontas de prova e o estado dos cabos. Comece pela maior escala quando o valor for desconhecido.",
+            "Em instalações elétricas, a medição deve ser feita por pessoa capacitada, com procedimento adequado, barreiras e equipamentos de proteção compatíveis."
           ]
         }
       ]
@@ -22,16 +67,61 @@
       "id": "circuito-2",
       "numero": "02",
       "nome": "CIRCUITO II",
-      "descricao": "Eletromagnetismo e Corrente Alternada",
+      "descricao": "Eletromagnetismo, capacitores, indutores e fundamentos de corrente alternada.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "Introdução ao Eletromagnetismo",
-          "descricao": "Conceitos fundamentais sobre a relação entre eletricidade e magnetismo.",
+          "titulo": "Campo magnético e eletromagnetismo",
+          "descricao": "Relação entre corrente elétrica, campo magnético e força eletromagnética.",
           "conteudo": [
-            "O eletromagnetismo estuda os fenômenos relacionados às cargas elétricas, campos elétricos e campos magnéticos.",
-            "Eletricidade e magnetismo estão diretamente relacionados e formam a base de diversos equipamentos elétricos.",
-            "Motores, transformadores, geradores e relés são exemplos de dispositivos que utilizam princípios eletromagnéticos."
+            "Uma corrente elétrica produz um campo magnético ao redor do condutor. A intensidade e a direção desse campo dependem da corrente e da geometria do circuito.",
+            "Quando um condutor percorrido por corrente é colocado em um campo magnético, pode surgir uma força. Esse princípio está presente no funcionamento dos motores elétricos.",
+            "Bobinas concentram o campo magnético e podem formar eletroímãs. O núcleo de material ferromagnético aumenta o fluxo magnético, mas também pode introduzir perdas e saturação.",
+            "Motores, relés, contatores, transformadores e geradores utilizam diferentes aplicações do eletromagnetismo."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Indução eletromagnética",
+          "descricao": "Geração de tensão a partir da variação do fluxo magnético.",
+          "conteudo": [
+            "A indução eletromagnética ocorre quando o fluxo magnético que atravessa uma bobina varia. Essa variação pode ser causada pelo movimento de um ímã, pela movimentação da bobina ou pela mudança da corrente.",
+            "A Lei de Faraday relaciona a tensão induzida à taxa de variação do fluxo magnético e ao número de espiras. A Lei de Lenz indica que o efeito induzido se opõe à causa que o produziu.",
+            "Geradores transformam energia mecânica em energia elétrica. Transformadores transferem energia entre circuitos por meio de um campo magnético variável.",
+            "A frequência, o número de espiras, o material do núcleo e a forma de onda influenciam o funcionamento de equipamentos baseados em indução."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Capacitores e indutores",
+          "descricao": "Comportamento de componentes que armazenam energia em campos elétricos e magnéticos.",
+          "conteudo": [
+            "O capacitor armazena energia em um campo elétrico. Sua capacitância é medida em farads (F) e depende da geometria, do material isolante e da distância entre as placas.",
+            "O indutor armazena energia em um campo magnético. Sua indutância é medida em henrys (H) e depende do número de espiras, do núcleo e da geometria da bobina.",
+            "Em regime contínuo, um capacitor ideal tende a bloquear corrente após a carga, enquanto um indutor ideal tende a se comportar como um curto-circuito após o transitório.",
+            "Capacitores podem permanecer carregados mesmo depois de desligados. Sempre aplique um procedimento de descarga seguro antes de tocar ou medir."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Corrente alternada e valor eficaz",
+          "descricao": "Características de sinais alternados, frequência, período, fase e valor RMS.",
+          "conteudo": [
+            "Na corrente alternada, a tensão e a corrente variam com o tempo e podem mudar de sentido periodicamente. Em uma forma senoidal, a frequência é medida em hertz (Hz) e o período é T = 1 / f.",
+            "O valor eficaz, ou RMS, representa o valor contínuo que produziria o mesmo efeito térmico em uma resistência. Para uma senoide ideal, Vrms = Vpico / √2.",
+            "Duas ondas podem ter diferença de fase. Em circuitos com resistência, indutância e capacitância, essa diferença afeta a corrente e a potência.",
+            "Ao interpretar uma tensão de rede, identifique se o valor informado é eficaz ou de pico. Não confunda tensão fase-neutro com tensão entre fases."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Impedância e potência em CA",
+          "descricao": "Análise básica de circuitos alternados usando impedância e fator de potência.",
+          "conteudo": [
+            "Em corrente alternada, a oposição total à passagem da corrente é chamada impedância e é representada por Z, medida em ohms. Ela combina resistência e reatância.",
+            "A reatância indutiva aumenta com a frequência, enquanto a reatância capacitiva diminui com a frequência. Por isso, a frequência influencia o comportamento dos circuitos.",
+            "A potência ativa é a parcela convertida em trabalho ou calor. A potência reativa está associada à troca de energia entre a fonte e os campos elétricos ou magnéticos. A potência aparente é o produto entre tensão e corrente eficazes.",
+            "O fator de potência relaciona potência ativa e aparente. Um fator de potência baixo pode aumentar a corrente para a mesma potência útil e deve ser considerado no dimensionamento."
           ]
         }
       ]
@@ -39,15 +129,62 @@
     {
       "id": "SEP",
       "numero": "03",
-      "nome": "Sistema Eletrico De Potência",
-      "descricao": "Sistema Eletrico De Potência",
+      "nome": "SISTEMAS ELÉTRICOS DE POTÊNCIA",
+      "descricao": "Geração, transmissão, distribuição, proteção e operação de sistemas elétricos de potência.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "titulo": "Estrutura do sistema elétrico de potência",
+          "descricao": "Visão geral das etapas que levam a energia da geração até o consumidor.",
           "conteudo": [
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+            "Um sistema elétrico de potência reúne geração, transmissão, subtransmissão, distribuição e cargas. Cada etapa possui níveis de tensão, equipamentos e critérios de proteção próprios.",
+            "A elevação da tensão na transmissão reduz a corrente para uma mesma potência e ajuda a diminuir perdas por efeito Joule nos condutores.",
+            "Subestações realizam transformação de tensão, manobra, medição, proteção e controle. Diagramas unifilares representam essa estrutura de forma simplificada.",
+            "A operação precisa manter equilíbrio entre geração e consumo, qualidade de energia, segurança de pessoas e continuidade do fornecimento."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Transformadores de potência",
+          "descricao": "Princípio de funcionamento, relações de transformação e componentes principais.",
+          "conteudo": [
+            "O transformador transfere energia entre enrolamentos por indução eletromagnética. A relação entre tensões acompanha, idealmente, a relação entre o número de espiras.",
+            "Transformadores elevadores aumentam a tensão para transmissão. Transformadores abaixadores reduzem a tensão para distribuição e utilização.",
+            "Tanque, óleo isolante, buchas, radiadores, comutador e sistemas de proteção são exemplos de partes encontradas em transformadores de potência, conforme a aplicação.",
+            "A placa de identificação informa potência, tensões, frequência, impedância e outras características. Essas informações devem ser conferidas antes de qualquer intervenção."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Linhas e redes de distribuição",
+          "descricao": "Elementos das redes aéreas e subterrâneas e critérios básicos de operação.",
+          "conteudo": [
+            "Linhas de transmissão e redes de distribuição utilizam condutores, estruturas, isoladores, cabos de proteção e equipamentos de manobra.",
+            "A escolha de condutores considera corrente admissível, queda de tensão, curto-circuito, esforços mecânicos, temperatura e condições ambientais.",
+            "Redes podem ser radiais, em anel ou malhadas. A topologia influencia a confiabilidade, a seletividade e a facilidade de manutenção.",
+            "A faixa de tensão, o afastamento de partes energizadas e as condições do local devem ser respeitados em qualquer atividade de inspeção ou manutenção."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Proteção de sistemas de potência",
+          "descricao": "Função dos relés, disjuntores, fusíveis e conceitos de seletividade.",
+          "conteudo": [
+            "A proteção deve detectar condições anormais, como curto-circuito, sobrecorrente, falta à terra, sobretensão ou subtensão, e retirar a parte defeituosa do sistema.",
+            "Transformadores de corrente e de potencial reduzem grandezas para medição e proteção. Relés analisam esses sinais e comandam a abertura de disjuntores quando necessário.",
+            "Seletividade significa desligar somente o trecho afetado, mantendo o restante do sistema em operação sempre que possível. Coordenação e temporização ajudam a alcançar esse objetivo.",
+            "Nenhuma proteção substitui inspeção, manutenção, aterramento e procedimentos seguros. O estudo de proteção deve considerar o sistema real e seus níveis de curto-circuito."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Aterramento e qualidade de energia",
+          "descricao": "Funções do aterramento e problemas que afetam a qualidade do fornecimento elétrico.",
+          "conteudo": [
+            "O aterramento pode contribuir para a segurança, para o funcionamento das proteções e para a referência elétrica do sistema. Suas funções dependem do esquema adotado e do projeto.",
+            "Equipotencialização reduz diferenças de potencial entre massas e elementos condutores. O sistema deve ser projetado, instalado e verificado conforme as normas aplicáveis.",
+            "Afundamentos, elevações, interrupções, harmônicas, desequilíbrio e variações de frequência são exemplos de fenômenos de qualidade de energia.",
+            "A identificação do problema deve combinar histórico, inspeção, medição e análise da carga. Não se deve atribuir toda falha a um único equipamento sem evidências."
           ]
         }
       ]
@@ -55,15 +192,62 @@
     {
       "id": "Manutenções Elétricas De Potência",
       "numero": "04",
-      "nome": "Manutenções Elétricas De Potência",
-      "descricao": "Manutenções Elétricas De Potência",
+      "nome": "MANUTENÇÕES ELÉTRICAS DE POTÊNCIA",
+      "descricao": "Planejamento, inspeção e execução segura de manutenção em equipamentos de potência.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "titulo": "Tipos de manutenção",
+          "descricao": "Diferenças entre manutenção corretiva, preventiva, preditiva e detectiva.",
           "conteudo": [
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+            "A manutenção corretiva ocorre depois da falha ou quando o equipamento perde sua função. Pode ser planejada ou emergencial, dependendo da possibilidade de programar a intervenção.",
+            "A manutenção preventiva é realizada em intervalos definidos ou de acordo com critérios estabelecidos. Ela busca reduzir a probabilidade de falhas, mas não elimina todos os riscos.",
+            "A manutenção preditiva acompanha a condição do equipamento por medições como temperatura, vibração, resistência de isolamento, análise de óleo ou termografia.",
+            "A escolha do tipo de manutenção deve considerar criticidade, risco, histórico de falhas, custo, disponibilidade de peças e impacto da parada."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Planejamento de uma intervenção",
+          "descricao": "Etapas para preparar uma manutenção com segurança, recursos e critérios de liberação.",
+          "conteudo": [
+            "Um bom planejamento define o equipamento, o escopo, os riscos, a equipe, as ferramentas, os materiais, os documentos e os critérios de teste e retorno à operação.",
+            "A ordem de serviço deve registrar o que será feito, onde, quando, por quem e em quais condições. Mudanças de escopo precisam ser avaliadas antes de continuar.",
+            "O diagrama unifilar, os manuais, os registros anteriores e os procedimentos internos ajudam a evitar intervenções em circuitos incorretos.",
+            "A etapa de liberação deve incluir desligamento, seccionamento, bloqueio, identificação, verificação de ausência de tensão, aterramento temporário quando aplicável e sinalização."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Inspeção e ensaios elétricos",
+          "descricao": "Medições utilizadas para avaliar a condição de cabos, motores, transformadores e painéis.",
+          "conteudo": [
+            "Inspeção visual procura sinais de aquecimento, corrosão, sujeira, umidade, danos mecânicos, conexões frouxas, identificação ausente e alterações não documentadas.",
+            "A resistência de isolamento pode indicar degradação de materiais isolantes, desde que o ensaio seja feito com instrumento, tensão de teste e procedimento adequados ao equipamento.",
+            "Continuidade, resistência de contato, relação de transformação, resistência de enrolamentos e ensaios funcionais são exemplos de verificações possíveis.",
+            "Todo ensaio precisa ter critério de aceitação, registro do valor, condições ambientais, instrumento utilizado e identificação do equipamento."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Manutenção de transformadores e disjuntores",
+          "descricao": "Cuidados básicos com os principais equipamentos de manobra e transformação.",
+          "conteudo": [
+            "Em transformadores, podem ser avaliados nível e condição do óleo, vazamentos, buchas, conexões, sistema de resfriamento, aterramento e sinais de aquecimento.",
+            "Disjuntores devem ser verificados quanto ao mecanismo de abertura e fechamento, contatos, isolação, sinalização, intertravamentos e atuação dos dispositivos de proteção.",
+            "A manutenção deve seguir as instruções do fabricante e o procedimento da instalação. Não se deve improvisar ajustes em mecanismos ou proteções.",
+            "Depois da intervenção, a equipe deve retirar ferramentas, conferir tampas e proteções, atualizar registros e realizar testes antes da energização."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Relatório e análise de falhas",
+          "descricao": "Como registrar uma ocorrência e buscar a causa real de um defeito.",
+          "conteudo": [
+            "Um relatório técnico deve registrar data, equipamento, condição encontrada, sintomas, medições, ações executadas, peças substituídas e situação final.",
+            "A análise de falhas deve separar causa imediata, causa contribuinte e causa raiz. Trocar um componente sem entender o motivo da falha pode apenas repetir o problema.",
+            "Ferramentas como os cinco porquês, diagrama de causa e efeito e análise de modos de falha ajudam a organizar a investigação.",
+            "As conclusões precisam ser baseadas em evidências. Fotografias, registros de proteção, tendências de medição e histórico de manutenção aumentam a qualidade da análise."
           ]
         }
       ]
@@ -72,14 +256,61 @@
       "id": "GESTÃO DA MANUTENÇÃO",
       "numero": "05",
       "nome": "GESTÃO DA MANUTENÇÃO",
-      "descricao": "GESTÃO DA MANUTENÇÃO",
+      "descricao": "Indicadores, planejamento, custos, estoque e melhoria contínua na manutenção.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "titulo": "Objetivos da gestão da manutenção",
+          "descricao": "Como alinhar manutenção, segurança, disponibilidade, qualidade e custos.",
           "conteudo": [
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+            "A gestão da manutenção busca manter os ativos disponíveis e seguros, com custo compatível com a importância do processo e com o risco da falha.",
+            "Manutenção não deve ser vista apenas como despesa. Ela protege pessoas, reduz paradas, preserva equipamentos e contribui para a qualidade da produção.",
+            "O plano de manutenção deve estar alinhado ao processo da empresa, aos requisitos legais, às recomendações dos fabricantes e ao histórico dos ativos.",
+            "Decisões melhores surgem quando dados de falhas, horas trabalhadas, materiais, custos e desempenho são registrados de forma padronizada."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Planejamento e programação",
+          "descricao": "Organização das atividades, recursos e prioridades da equipe de manutenção.",
+          "conteudo": [
+            "Planejar é definir o que precisa ser feito, como será feito, com quais recursos e quais riscos existem. Programar é colocar as atividades em uma sequência e em uma data possível.",
+            "A prioridade pode considerar segurança, meio ambiente, impacto na produção, probabilidade de falha, tempo de reposição e custo da parada.",
+            "Uma atividade bem preparada possui escopo claro, mão de obra, ferramentas, peças, desenhos, permissões e duração estimada.",
+            "Reuniões curtas de programação e análise do serviço realizado ajudam a reduzir retrabalho e a melhorar as próximas estimativas."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Indicadores de manutenção",
+          "descricao": "Métricas para acompanhar confiabilidade, disponibilidade e eficiência.",
+          "conteudo": [
+            "MTBF é o tempo médio entre falhas e ajuda a acompanhar a confiabilidade de um ativo. MTTR é o tempo médio para reparo e ajuda a avaliar a mantenabilidade.",
+            "Disponibilidade relaciona o tempo em que o equipamento está apto a operar com o período observado, considerando as definições adotadas pela organização.",
+            "Outros indicadores podem acompanhar cumprimento do plano preventivo, percentual de corretivas, backlog, custo por ativo e reincidência de falhas.",
+            "Um indicador isolado pode induzir a decisões erradas. É necessário analisar tendência, contexto, qualidade dos registros e impacto real no processo."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Custos, materiais e sobressalentes",
+          "descricao": "Controle dos recursos que sustentam a execução das atividades de manutenção.",
+          "conteudo": [
+            "O custo total de uma falha pode incluir mão de obra, peças, serviços, energia desperdiçada, perda de produção e impactos de segurança ou qualidade.",
+            "O estoque deve equilibrar disponibilidade e capital parado. Itens críticos, de alto prazo de reposição ou sem substituto imediato merecem critérios específicos.",
+            "A identificação correta de peças, unidades de medida, localização e quantidade evita compras duplicadas e atrasos durante a intervenção.",
+            "A retirada de um item do estoque deve estar relacionada à ordem de serviço. Isso melhora a rastreabilidade e a apuração dos custos."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Melhoria contínua e confiabilidade",
+          "descricao": "Uso dos resultados da manutenção para eliminar causas e aprimorar processos.",
+          "conteudo": [
+            "Melhoria contínua significa aprender com resultados, falhas, quase acidentes e sugestões, transformando esse aprendizado em ações verificáveis.",
+            "A manutenção centrada em confiabilidade prioriza funções, falhas funcionais, causas, efeitos e consequências para definir tarefas adequadas.",
+            "Uma ação de melhoria precisa ter responsável, prazo, critério de conclusão e verificação de eficácia. Apenas registrar uma recomendação não elimina o risco.",
+            "Padronização, treinamento, atualização de desenhos e comunicação entre operação e manutenção tornam os ganhos mais duradouros."
           ]
         }
       ]
@@ -87,15 +318,62 @@
     {
       "id": "INSTALAÇÕES ELÉTRICAS INDÚSTRIAS",
       "numero": "06",
-      "nome": "INSTALAÇÕES ELÉTRICAS INDÚSTRIAS",
-      "descricao": "INSTALAÇÕES ELÉTRICAS INDÚSTRIAS",
+      "nome": "INSTALAÇÕES ELÉTRICAS INDUSTRIAIS",
+      "descricao": "Distribuição elétrica industrial, comandos, proteção, dimensionamento e documentação.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "titulo": "Arquitetura de uma instalação industrial",
+          "descricao": "Partes que compõem a distribuição elétrica desde a entrada de energia até as cargas.",
           "conteudo": [
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+            "Uma instalação industrial pode incluir entrada de energia, subestação, transformadores, quadros, centros de controle de motores, eletrocalhas, leitos, eletrodutos e cargas.",
+            "O projeto deve separar circuitos, identificar cargas, prever expansão e considerar acesso para operação e manutenção.",
+            "O diagrama unifilar apresenta fontes, transformadores, dispositivos de proteção, barramentos e alimentadores. Ele deve permanecer atualizado.",
+            "A seleção de equipamentos depende de tensão, corrente, frequência, curto-circuito disponível, ambiente, grau de proteção e regime de operação."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Dimensionamento de condutores",
+          "descricao": "Critérios básicos de capacidade de condução, queda de tensão e curto-circuito.",
+          "conteudo": [
+            "O dimensionamento de um condutor não depende apenas da corrente da carga. Também são considerados método de instalação, agrupamento, temperatura, material, isolação e queda de tensão.",
+            "A corrente de projeto deve ser comparada à capacidade de condução corrigida. O dispositivo de proteção precisa ser compatível com o condutor e com a carga.",
+            "A queda de tensão aumenta com o comprimento, a corrente e a impedância do circuito. Em circuitos trifásicos, o cálculo usa as grandezas e a geometria correspondentes ao sistema.",
+            "Em caso de curto-circuito, o condutor deve suportar os efeitos térmicos e eletrodinâmicos durante o tempo de atuação da proteção."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Quadros, barramentos e proteção",
+          "descricao": "Organização e proteção dos circuitos em painéis e quadros industriais.",
+          "conteudo": [
+            "Quadros e painéis devem permitir identificação, seccionamento, proteção, medição e manutenção. A montagem precisa respeitar o projeto e os requisitos do conjunto.",
+            "Disjuntores, fusíveis, relés de sobrecarga, relés de falta de fase e dispositivos diferenciais podem exercer funções diferentes. A escolha depende da aplicação.",
+            "Barramentos devem ser dimensionados para corrente, temperatura, esforços de curto-circuito e distâncias de isolação. Conexões frouxas podem gerar aquecimento perigoso.",
+            "Portas, tampas, barreiras e grau de proteção devem reduzir o risco de contato acidental e limitar a entrada de poeira ou água conforme o ambiente."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Eletrodutos, eletrocalhas e cabos",
+          "descricao": "Sistemas de encaminhamento, separação e identificação de cabos.",
+          "conteudo": [
+            "O sistema de encaminhamento deve proteger os cabos contra impactos, calor, umidade, agentes químicos e esforços mecânicos compatíveis com o ambiente.",
+            "Circuitos de potência, comando, instrumentação e comunicação podem exigir separação para reduzir interferência e facilitar manutenção.",
+            "Curvas, ocupação, raio mínimo de curvatura, fixação e acessibilidade precisam ser considerados. Cabos não devem ser forçados ou comprimidos durante a instalação.",
+            "A identificação nas duas extremidades, os diagramas e as listas de cabos reduzem o tempo de diagnóstico e evitam intervenções no circuito errado."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Motores e partidas",
+          "descricao": "Alimentação, proteção e formas de partida de motores industriais.",
+          "conteudo": [
+            "A placa do motor informa tensão, corrente, potência, frequência, rotação, fator de potência, rendimento, classe de isolação e forma de ligação, entre outros dados.",
+            "A partida direta é simples, mas pode produzir corrente elevada. Partidas estrela-triângulo, compensadas, com soft starter ou inversor podem ser usadas conforme o objetivo.",
+            "A proteção deve considerar curto-circuito, sobrecarga, falta de fase, sequência de fases, temperatura e condições específicas da máquina.",
+            "Antes de energizar, confira aterramento, aperto, sentido de rotação, acoplamento, ventilação e ausência de pessoas na zona de risco."
           ]
         }
       ]
@@ -104,14 +382,61 @@
       "id": "INTRODUÇÃO À INDÚSTRIA 4.0",
       "numero": "07",
       "nome": "INTRODUÇÃO À INDÚSTRIA 4.0",
-      "descricao": "INTRODUÇÃO À INDÚSTRIA 4.0",
+      "descricao": "Tecnologias digitais, integração de dados, automação e transformação dos processos industriais.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "titulo": "O que é Indústria 4.0",
+          "descricao": "Conceitos de digitalização, conectividade e tomada de decisão baseada em dados.",
           "conteudo": [
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+            "Indústria 4.0 é uma abordagem de transformação dos processos industriais por meio de conectividade, automação, dados, integração e capacidade de decisão mais rápida.",
+            "Ela não significa apenas comprar equipamentos novos. É preciso definir problemas, objetivos, indicadores, pessoas responsáveis e forma de manter a solução.",
+            "Sistemas ciberfísicos combinam elementos físicos, sensores, comunicação e software. Eles permitem acompanhar e, em alguns casos, atuar sobre processos reais.",
+            "A implantação deve considerar segurança, interoperabilidade, qualidade dos dados, custo, treinamento e impacto no trabalho."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Sensores, atuadores e aquisição de dados",
+          "descricao": "Elementos que percebem variáveis do processo e executam ações de controle.",
+          "conteudo": [
+            "Sensores medem grandezas como temperatura, pressão, nível, posição, corrente, vibração e presença. O sinal pode ser elétrico, pneumático, digital ou analógico.",
+            "Atuadores transformam comandos em ações, como movimentar uma válvula, acionar um motor, aquecer uma resistência ou abrir um contator.",
+            "A qualidade da medição depende de faixa, resolução, precisão, tempo de resposta, instalação e calibração. Um dado ruim pode gerar uma decisão ruim.",
+            "Antes de conectar um sensor a um sistema, confira alimentação, tipo de saída, polaridade, aterramento, compatibilidade e proteção contra interferências."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "CLP, supervisão e integração",
+          "descricao": "Função do controlador lógico programável, da supervisão e das redes industriais.",
+          "conteudo": [
+            "O CLP lê entradas, executa um programa e atualiza saídas em ciclos repetidos. Ele é usado para controlar sequências, intertravamentos, temporizações e condições de segurança do processo.",
+            "Sistemas supervisórios apresentam estados, alarmes, tendências e comandos para os operadores. A interface deve mostrar informações relevantes sem esconder condições críticas.",
+            "Redes industriais permitem trocar dados entre controladores, inversores, remotas, sensores e sistemas de supervisão. O protocolo precisa ser compatível com os dispositivos.",
+            "Documentação de endereços, nomes de tags, versões de programa e parâmetros é essencial para manutenção e recuperação após uma falha."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Dados, nuvem e manutenção preditiva",
+          "descricao": "Uso de históricos e análises para antecipar falhas e melhorar decisões.",
+          "conteudo": [
+            "A coleta de dados permite acompanhar tendências e comparar o comportamento atual com referências anteriores. É importante registrar contexto, unidade, horário e origem da medição.",
+            "Manutenção preditiva pode usar temperatura, vibração, corrente, consumo, ruído e outras variáveis. O método deve ser validado com falhas reais e conhecimento do processo.",
+            "Serviços em nuvem facilitam armazenamento, acesso e análise, mas exigem controle de usuários, disponibilidade, cópias de segurança e proteção das informações.",
+            "Nem todo dado precisa ser enviado para a nuvem. Uma arquitetura bem planejada define o que deve ser processado localmente e o que pode ser compartilhado."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Cibersegurança industrial",
+          "descricao": "Proteção de redes, controladores e processos contra acessos indevidos e indisponibilidade.",
+          "conteudo": [
+            "Ambientes industriais precisam preservar confidencialidade quando necessário, mas principalmente disponibilidade, integridade do processo e segurança das pessoas.",
+            "Senhas individuais, menor privilégio, atualização controlada, segmentação de redes, cópias de segurança e registro de acessos são medidas importantes.",
+            "Equipamentos antigos podem ter limitações de segurança. Nesse caso, controles compensatórios, isolamento e regras de acesso ajudam a reduzir a exposição.",
+            "Qualquer mudança em uma rede industrial deve ser planejada, registrada e testada. Segurança não deve ser adicionada sem avaliar o efeito sobre o processo."
           ]
         }
       ]
@@ -120,14 +445,61 @@
       "id": "MANUTENÇÃO ELÉTRICA INDUSTRIAL",
       "numero": "08",
       "nome": "MANUTENÇÃO ELÉTRICA INDUSTRIAL",
-      "descricao": "MANUTENÇÃO ELÉTRICA INDUSTRIAL",
+      "descricao": "Diagnóstico, manutenção e confiabilidade de motores, painéis, acionamentos e máquinas industriais.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "titulo": "Diagnóstico de falhas elétricas",
+          "descricao": "Método organizado para investigar sintomas sem substituir peças de forma aleatória.",
           "conteudo": [
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+            "Comece pela descrição do sintoma: o que parou, quando ocorreu, se houve ruído, cheiro, aquecimento, alarme ou atuação de proteção.",
+            "Consulte o diagrama, confirme a alimentação e siga o circuito desde a fonte até a carga. Dividir o problema em blocos reduz o tempo de diagnóstico.",
+            "Verifique primeiro condições simples e seguras, como fusíveis, disjuntores, conexões, intertravamentos, emergência, sensores e alimentação de comando.",
+            "Registre medições e hipóteses. Um diagnóstico profissional precisa permitir que outra pessoa entenda o raciocínio e repita a verificação."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Manutenção de motores elétricos",
+          "descricao": "Inspeção de alimentação, isolação, rolamentos, ventilação e condições de operação.",
+          "conteudo": [
+            "Motores devem ser observados quanto a ruído, vibração, temperatura, corrente, sujeira, ventilação, alinhamento e estado das conexões.",
+            "Desequilíbrio de tensão ou corrente pode provocar aquecimento e reduzir a vida útil. A causa deve ser investigada no motor, nas conexões e na alimentação.",
+            "Rolamentos, acoplamentos e ventiladores influenciam o desempenho elétrico e mecânico. Uma falha mecânica pode aparecer como sobrecorrente ou aquecimento.",
+            "Ensaios de isolamento e continuidade devem respeitar o procedimento do fabricante e garantir que componentes eletrônicos sensíveis estejam protegidos ou desconectados quando necessário."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Inversores e acionamentos",
+          "descricao": "Cuidados com parametrização, diagnóstico e manutenção de inversores de frequência.",
+          "conteudo": [
+            "O inversor de frequência controla a velocidade do motor variando a frequência e a tensão aplicadas. Parâmetros incorretos podem causar falhas, aquecimento ou desempenho inadequado.",
+            "Antes de alterar parâmetros, salve a configuração existente e registre o motivo da mudança. A identificação do motor deve ser compatível com a placa e com o modo de controle.",
+            "Barramento CC pode permanecer carregado após o desligamento. Aguarde o tempo indicado, confirme a ausência de tensão e siga o procedimento de segurança antes de abrir o equipamento.",
+            "Filtros, aterramento, cabos, ventilação e distância entre potência e controle influenciam interferência eletromagnética e confiabilidade do acionamento."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Painéis e comandos industriais",
+          "descricao": "Inspeção de contatores, relés, fontes, bornes e circuitos de comando.",
+          "conteudo": [
+            "Em um painel de comando, a sequência de operação depende de contatos, bobinas, relés, temporizadores, sensores e intertravamentos. O diagrama deve orientar a análise.",
+            "Contatos queimados, bobinas com tensão incorreta, bornes frouxos e fontes sobrecarregadas são causas comuns de falhas de comando.",
+            "A manutenção deve conferir identificação dos fios, aperto, limpeza, ventilação, estado dos dispositivos e compatibilidade entre tensão de comando e componentes.",
+            "Nunca elimine um intertravamento ou faça uma ponte permanente apenas para manter a máquina funcionando. A alteração pode criar um risco maior."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Termografia e análise de condição",
+          "descricao": "Uso de inspeções não invasivas para encontrar aquecimentos anormais.",
+          "conteudo": [
+            "A termografia pode revelar conexões frouxas, sobrecarga, desequilíbrio, defeitos de componentes e problemas de ventilação sem contato direto com a instalação.",
+            "A interpretação depende de carga, emissividade, distância, reflexos, ambiente e comparação entre pontos semelhantes. Uma imagem colorida, sozinha, não é um diagnóstico.",
+            "Os pontos encontrados devem ser classificados por risco e confirmados com outras informações, como corrente, torque, aperto e histórico.",
+            "A inspeção deve ser realizada por pessoa treinada, respeitando limites de aproximação, categoria do equipamento e barreiras existentes."
           ]
         }
       ]
@@ -136,14 +508,61 @@
       "id": "SAÚDE, SEGURANÇA DO TRABALHO E MEIO AMBIENTE",
       "numero": "09",
       "nome": "SAÚDE, SEGURANÇA DO TRABALHO E MEIO AMBIENTE",
-      "descricao": "SAÚDE, SEGURANÇA DO TRABALHO E MEIO AMBIENTE",
+      "descricao": "Prevenção de acidentes, riscos elétricos, uso de proteção e responsabilidade ambiental.",
       "conteudos": [
         {
           "id": 1,
-          "titulo": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "descricao": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "titulo": "Perigos e riscos no trabalho",
+          "descricao": "Identificação de perigos, avaliação de riscos e escolha de medidas de controle.",
           "conteudo": [
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+            "Perigo é uma fonte ou situação com potencial de causar dano. Risco combina a possibilidade de ocorrência com a gravidade de suas consequências.",
+            "Na área elétrica, podem existir choque, arco elétrico, queimaduras, incêndio, explosão, queda, ruído, calor, produtos químicos e riscos relacionados a máquinas.",
+            "A avaliação deve considerar tarefa, ambiente, energia envolvida, pessoas expostas, frequência, ferramentas e condições anormais previsíveis.",
+            "A prioridade é eliminar o perigo quando possível. Depois podem ser aplicados controles de engenharia, administrativos e equipamentos de proteção."
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Segurança em instalações elétricas",
+          "descricao": "Princípios de desenergização, sinalização, bloqueio e trabalho seguro.",
+          "conteudo": [
+            "A condição preferencial para intervenção é a instalação desenergizada, isolada e liberada conforme procedimento. Desligar um comando não é o mesmo que eliminar todas as fontes de energia.",
+            "O procedimento deve considerar seccionamento, impedimento de reenergização, constatação de ausência de tensão, aterramento temporário quando aplicável, proteção de partes energizadas próximas e sinalização.",
+            "Fontes alternativas, retorno por outros circuitos, capacitores, geradores e energia mecânica armazenada precisam ser identificados antes do início.",
+            "Trabalhos em proximidade ou energizados exigem planejamento específico, autorização, treinamento, ferramentas e proteção compatíveis com o risco."
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "EPI, EPC e resposta a emergências",
+          "descricao": "Proteções individuais e coletivas, primeiros cuidados e comunicação de ocorrências.",
+          "conteudo": [
+            "EPI protege uma pessoa, enquanto EPC protege várias pessoas ou controla uma condição do ambiente. Ambos devem ser selecionados conforme o risco e mantidos em condições adequadas.",
+            "Óculos, capacete, proteção auditiva, luvas, calçados, vestimentas e proteção facial podem ter aplicações diferentes. Não existe um EPI universal para todo trabalho elétrico.",
+            "Em uma emergência, não toque em uma vítima ainda em contato com a fonte sem controlar a energia. Afaste pessoas, acione o atendimento e siga o plano da organização.",
+            "Acidentes e quase acidentes devem ser comunicados e analisados. O objetivo é corrigir as causas e evitar repetição, não esconder informações."
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Ergonomia e saúde ocupacional",
+          "descricao": "Adaptação do trabalho para reduzir esforço, fadiga e adoecimento.",
+          "conteudo": [
+            "Ergonomia considera postura, força, repetição, alcance, peso, iluminação, ruído, temperatura, ritmo e organização do trabalho.",
+            "Levantamento e transporte de cargas devem ser planejados. Use meios auxiliares quando disponíveis e evite torções, movimentos bruscos e esforços acima da capacidade.",
+            "Pausas, alternância de tarefas, organização das ferramentas e altura adequada de trabalho reduzem fadiga e erros.",
+            "Relatar dor, desconforto, quase acidente ou condição insegura permite agir antes que o problema se torne uma lesão ou ocorrência grave."
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Meio ambiente e descarte de resíduos",
+          "descricao": "Práticas ambientais aplicadas à operação e à manutenção elétrica.",
+          "conteudo": [
+            "Resíduos de cabos, metais, lâmpadas, baterias, componentes eletrônicos, óleos e materiais contaminados devem ser identificados e destinados conforme os procedimentos aplicáveis.",
+            "Óleo isolante, produtos de limpeza e outras substâncias podem contaminar solo e água. Vazamentos devem ser contidos e comunicados imediatamente.",
+            "A eficiência energética envolve reduzir perdas, corrigir desperdícios, manter equipamentos regulados e utilizar a energia conforme a necessidade do processo.",
+            "A gestão ambiental deve considerar prevenção, segregação, armazenamento temporário, transporte autorizado e registro da destinação. Nunca descarte resíduos técnicos junto ao lixo comum sem verificar a orientação local."
           ]
         }
       ]
